@@ -54,7 +54,7 @@ add_action( 'plugins_loaded', function() {
 
 // Enqueue script
 add_action( 'wp_enqueue_scripts', function() {
-	wp_enqueue_script( 'custom-style', plugins_url('custom.js', __FILE__) );
+	wp_enqueue_script( 'custom-script', plugins_url('custom.js', __FILE__) );
 });
 
 // Load WooCommerce template
