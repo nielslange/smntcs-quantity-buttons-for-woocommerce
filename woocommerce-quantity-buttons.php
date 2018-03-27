@@ -34,21 +34,31 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 // Avoid direct plugin access
 if ( !defined( 'ABSPATH' ) ) die('¯\_(ツ)_/¯');
 
+// Show warning if WooCommerce is not active or WooCommerce version < 2.3
+add_action( 'admin_notices', function() {
+	global $woocommerce;
+	global $woocommerce;
+
+	if ( ! class_exists( 'WooCommerce' ) || version_compare( $woocommerce->version, '2.3', '<' ) ) {
+		$class      = 'notice notice-warning is-dismissible';
+		$message    = __( 'SMNTCS WooCommerce Quantity Buttons requires at least WooCommerce 2.3.', 'smntcs-woocommerce-quantity-buttons' );
+
+		printf( '<div class="%1$s"><p>%2$s</p></div>', esc_attr( $class ), esc_html( $message ) );
+	}
+});
+
 // Load localisation
-add_action('plugins_loaded', 'smntcswqb_woocommerce_quantity_buttons_load_text_domain');
-function smntcs_woocommerce_quantity_buttons_load_text_domain() {
+add_action( 'plugins_loaded', function() {
 	load_plugin_textdomain( 'smntcs-woocommerce-quantity-buttons', false, dirname( plugin_basename(__FILE__) ) . '/languages/' );
-}
+});
 
 // Enqueue script
-add_action( 'wp_enqueue_scripts', 'smntcs_woocommerce_quantity_buttons_load_scripts' );
-function smntcs_woocommerce_quantity_buttons_load_scripts() {
-	wp_enqueue_style( 'custom-style', plugins_url('custom.css', __FILE__) );
-}
+add_action( 'wp_enqueue_scripts', function() {
+	wp_enqueue_script( 'custom-style', plugins_url('custom.js', __FILE__) );
+});
 
 // Load WooCommerce template
-add_filter( 'woocommerce_locate_template', 'smntcs_woocommerce_quantity_buttons_load_template', 1, 3 );
-function smntcs_woocommerce_quantity_buttons_load_template( $template, $template_name, $template_path ) {
+add_filter( 'woocommerce_locate_template', function( $template, $template_name, $template_path ) {
 	global $woocommerce;
 
 	$_template      = $template;
@@ -65,4 +75,4 @@ function smntcs_woocommerce_quantity_buttons_load_template( $template, $template
 	}
 
 	return $template;
-}
+}, 1, 3 );
