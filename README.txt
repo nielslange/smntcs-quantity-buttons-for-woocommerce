@@ -13,7 +13,7 @@ Display quantity buttons on WooCommerce product page
 
 == Description ==
 
-Add two additional buttons to the quantity input field on the WooCommerce product page to easily increase and decrease the quantity vua button.
+Add two additional buttons to the quantity input field on the WooCommerce product page to easily increase and decrease the quantity via button click.
 
 == Installation ==
 
