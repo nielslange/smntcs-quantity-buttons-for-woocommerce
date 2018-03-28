@@ -1,7 +1,7 @@
 === SMNTCS WooCommerce Quantity Buttons ===
 
 Contributors: nielslange
-Donate link: ...
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=H8FCEN4TDSYBN
 Tags: WooCommerce, Quantity Button
 Version: 1.0
 Requires at least: 3.4
@@ -22,7 +22,7 @@ Add two additional buttons to the quantity input field on the WooCommerce produc
 
 == Screenshots ==
 
-...
+1. WooCommerce Quantity Buttons in action
 
 == Changelog ==
 
