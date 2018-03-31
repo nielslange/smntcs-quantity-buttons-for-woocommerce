@@ -7,7 +7,7 @@ Author: Niels Lange
 Author URI: https://nielslange.com
 Text Domain: smntcs-woocommerce-quantity-buttons
 Domain Path: /languages/
-Version: 1.0
+Version: 1.1
 Requires at least: 3.4
 Tested up to: 4.9
 License: GPLv2
@@ -55,6 +55,7 @@ add_action( 'plugins_loaded', function() {
 // Enqueue script
 add_action( 'wp_enqueue_scripts', function() {
 	wp_enqueue_script( 'custom-script', plugins_url('custom.js', __FILE__), array('jquery'), false, true );
+	wp_enqueue_style( 'custom-style', plugins_url('custom.css', __FILE__), null, false, 'screen' );
 });
 
 // Load WooCommerce template
@@ -62,7 +63,7 @@ add_filter( 'woocommerce_locate_template', function( $template, $template_name, 
 	global $woocommerce;
 
 	$_template      = $template;
-	$plugin_path    = untrailingslashit( plugin_dir_path( __FILE__ ) )  . '/template/';
+	$plugin_path    = untrailingslashit( plugin_dir_path( __FILE__ ) ) . '/template/';
 	$template_path  = ( ! $template_path ) ? $woocommerce->template_url : null;
 	$template       = locate_template( array( $template_path . $template_name, $template_name ) );
 

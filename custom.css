@@ -1,0 +1,11 @@
+/* Hide HTML5 number input spin box for Chrome, Opera & Safari */
+.woocommerce .quantity input[type="number"]::-webkit-outer-spin-button,
+.woocommerce .quantity input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0;
+}
+
+/* Hide HTML5 number input spin box for Firefox */
+.woocommerce .quantity input[type="number"] {
+  -moz-appearance: textfield;
+}
