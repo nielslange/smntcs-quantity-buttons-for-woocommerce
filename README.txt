@@ -2,7 +2,7 @@
 
 Contributors: nielslange
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=H8FCEN4TDSYBN
-Tags: WooCommerce, Quantity Button
+Tags: WooCommerce, Quantity Button, WooCommerce Quantity Button, Increment Button, WooCommerce Increment Button
 Version: 1.0
 Requires at least: 3.4
 Tested up to: 4.9
@@ -13,7 +13,7 @@ Display quantity buttons on WooCommerce product page
 
 == Description ==
 
-Add two additional buttons to the quantity input field on the WooCommerce product page to easily increase and decrease the quantity via button click.
+WooCommerce Quantity Buttons adds two additional buttons to the quantity input field on the WooCommerce product page to easily increase and decrease the quantity via button click.
 
 == Installation ==
 
