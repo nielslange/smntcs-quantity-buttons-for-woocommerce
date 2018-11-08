@@ -7,7 +7,7 @@ Author: Niels Lange
 Author URI: https://nielslange.com
 Text Domain: smntcs-woocommerce-quantity-buttons
 Domain Path: /languages/
-Version: 1.1
+Version: 1.2
 Requires at least: 3.4
 Tested up to: 4.9
 License: GPLv2
