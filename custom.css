@@ -9,3 +9,7 @@
 .woocommerce .quantity input[type="number"] {
   -moz-appearance: textfield;
 }
+
+table.cart td.product-quantity .qty {
+  padding: .6180469716em 1.41575em;
+}
