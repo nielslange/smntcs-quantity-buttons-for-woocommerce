@@ -22,7 +22,8 @@ WooCommerce Quantity Buttons adds two additional buttons to the quantity input f
 
 == Screenshots ==
 
-1. WooCommerce Quantity Buttons in action
+1. WooCommerce Quantity Buttons on product page
+2. WooCommerce Quantity Buttons on cart page
 
 == Changelog ==
 
