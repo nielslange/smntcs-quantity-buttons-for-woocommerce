@@ -2,10 +2,10 @@
 
 Contributors: nielslange
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=H8FCEN4TDSYBN
-Tags: WooCommerce, Quantity Buttons, Increment Buttons, Quantity Increment
-Version: 1.3
+Tags: WooCommerce, Quantity Buttons, Increment Buttons, Woocommerce Plus Minus Buttons
+Version: 1.4
 Requires at least: 3.4
-Tested up to: 5.0
+Tested up to: 5.1
 License: GPL2+
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -26,6 +26,9 @@ WooCommerce Quantity Buttons adds two additional buttons to the quantity input f
 2. WooCommerce Quantity Buttons on cart page
 
 == Changelog ==
+
+= 1.4 =
+* Tested up to 5.1
 
 = 1.3 =
 * Enable quantity buttons on cart page
