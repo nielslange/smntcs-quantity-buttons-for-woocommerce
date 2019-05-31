@@ -7,10 +7,10 @@
  * Author URI: https://nielslange.de
  * Text Domain: smntcs-woocommerce-quantity-buttons
  * Domain Path: /languages/
- * Version: 1.6
+ * Version: 1.7
  * Requires at least: 3.4
  * Requires PHP: 5.6
- * Tested up to: 5.1
+ * Tested up to: 5.2
  * License: GPL2+
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  *
@@ -58,75 +58,10 @@ add_action(
 /**
  * Enqueue scripts and styles
  */
-add_action(
-	'wp_enqueue_scripts',
-	function () {
-		wp_register_style( 'dummy-style', null, null, 1.6, 'screen' );
-		wp_enqueue_style( 'dummy-style' );
-		wp_add_inline_style(
-			'dummy-style',
-			".woocommerce .quantity input[type='number']::-webkit-outer-spin-button,
-			.woocommerce .quantity input[type='number']::-webkit-inner-spin-button {
-			  -webkit-appearance: none !important;
-			  margin: 0;
-			}
-	
-			.woocommerce .quantity input[type='number'] {
-			  -moz-appearance: textfield;
-			}
-	
-			table.cart td.product-quantity .qty {
-			  padding: .6180469716em 1.41575em;
-			}"
-		);
-
-		wp_register_script( 'dummy-script', null, null, 1.6, true );
-		wp_enqueue_script( 'dummy-script' );
-		wp_add_inline_script(
-			'dummy-script',
-			"jQuery( document ).ready(function( $ ) {
-				$('.woocommerce .quantity').on('click', '.minus', function (e) {
-					var qty  = $(this).parent().find('input.qty');
-					var val  = parseInt(qty.val());
-					var step = qty.attr('step');
-					step     = 'undefined' !== typeof(step) ? parseInt(step) : 1;
-					if (val > 0) {
-						qty.val(val - step).change();
-					}
-				});
-				$('.woocommerce .quantity').on('click', '.plus', function (e) {
-					var qty  = $(this).parent().find('input.qty');
-					var val  = parseInt(qty.val());
-					var step = qty.attr('step');
-					step     = 'undefined' !== typeof(step) ? parseInt(step) : 1;
-					qty.val(val + step).change();
-				});
-			});
-
-			jQuery( document.body ).on( 'updated_cart_totals', function(){
-				jQuery( document ).ready(function( $ ) {
-					$('.woocommerce .quantity').on('click', '.minus', function (e) {
-						var qty  = $(this).parent().find('input.qty');
-						var val  = parseInt(qty.val());
-						var step = qty.attr('step');
-						step     = 'undefined' !== typeof(step) ? parseInt(step) : 1;
-						if (val > 0) {
-							qty.val(val - step).change();
-						}
-					});
-					$('.woocommerce .quantity').on('click', '.plus', function (e) {
-						var qty  = $(this).parent().find('input.qty');
-						var val  = parseInt(qty.val());
-						var step = qty.attr('step');
-						step     = 'undefined' !== typeof(step) ? parseInt(step) : 1;
-						qty.val(val + step).change();
-					});
-				});
-			});"
-		);
-	},
-	11
-);
+add_action( 'wp_enqueue_scripts', function () {
+	wp_enqueue_script( 'custom-script', plugins_url( 'custom.js', __FILE__ ), array( 'jquery' ), false, true );
+	wp_enqueue_style( 'custom-style', plugins_url( 'custom.css', __FILE__ ), null, false, 'screen' );
+} );
 
 /**
  * Load WooCommerce template
@@ -154,4 +89,3 @@ add_filter(
 	1,
 	3
 );
-

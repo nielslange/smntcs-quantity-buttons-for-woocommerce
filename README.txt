@@ -3,9 +3,9 @@
 Contributors: nielslange
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=H8FCEN4TDSYBN
 Tags: WooCommerce, Quantity Buttons, Increment Buttons, Plus Minus Buttons
-Version: 1.6
-Requires at least: 3.4
-Tested up to: 5.1
+Version: 1.7
+Requires at least: 4.5
+Tested up to: 5.2
 Requires PHP: 5.6
 License: GPL2+
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -15,6 +15,13 @@ Display quantity buttons on WooCommerce product page
 == Description ==
 
 WooCommerce Quantity Buttons adds two additional buttons to the quantity input field on the WooCommerce product page to easily increase and decrease the quantity via button click.
+
+=== Tested with ===
+
+* [Min and Max Quantity for WooCommerce](https://wordpress.org/plugins/minmax-quantity-for-woocommerce/)
+* [WooCommerce Min Max Quantity & Step Control Single](https://wordpress.org/plugins/woo-min-max-quantity-step-control-single/)
+* [WooCommerce Min/Max Quantities](https://woocommerce.com/products/minmax-quantities/)
+* [Woocommerce Minimum and Maximum Quantity](https://wordpress.org/plugins/woo-min-max-quantity-limit/)
 
 == Installation ==
 
@@ -28,8 +35,10 @@ WooCommerce Quantity Buttons adds two additional buttons to the quantity input f
 
 == Changelog ==
 
+= 1.7 =
+* Checking maximum and minimum when adding or removing quantity
+
 = 1.6 =
-* Enqueue CSS and JS inline
 * Refactored based on PHPCS and WPCS
 
 = 1.5 =
