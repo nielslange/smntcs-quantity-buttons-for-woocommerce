@@ -5,7 +5,7 @@ jQuery(document).ready(function($) {
     var step = qty.attr('step');
     var min = qty.attr('min');
 
-    if (val > min) {
+    if ( 'undefined' !== typeof(min) || val > min) {
       step = 'undefined' !== typeof(step) ? parseInt(step) : 1;
 
       if (val > 0) {
@@ -19,9 +19,8 @@ jQuery(document).ready(function($) {
     var step = qty.attr('step');
     var max = qty.attr('max');
 
-    if (val < max) {
+    if ( 'undefined' !== typeof(max) || val < max ) {
       step = 'undefined' !== typeof(step) ? parseInt(step) : 1;
-
       qty.val(val + step).change();
     }
   });
@@ -35,7 +34,7 @@ jQuery(document.body).on('updated_cart_totals', function() {
       var step = qty.attr('step');
       var min = qty.attr('min');
 
-      if (val > min) {
+      if ( 'undefined' !== typeof(min) || val > min) {
         step = 'undefined' !== typeof(step) ? parseInt(step) : 1;
 
         if (val > 0) {
@@ -49,9 +48,8 @@ jQuery(document.body).on('updated_cart_totals', function() {
       var step = qty.attr('step');
       var max = qty.attr('max');
 
-      if (val < max) {
+      if ( 'undefined' !== typeof(max) || val < max ) {
         step = 'undefined' !== typeof(step) ? parseInt(step) : 1;
-
         qty.val(val + step).change();
       }
     });

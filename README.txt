@@ -3,7 +3,7 @@
 Contributors: nielslange
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=H8FCEN4TDSYBN
 Tags: WooCommerce, Quantity Buttons, Increment Buttons, Plus Minus Buttons
-Version: 1.7
+Version: 1.8
 Requires at least: 4.5
 Tested up to: 5.2
 Requires PHP: 5.6
@@ -34,6 +34,9 @@ WooCommerce Quantity Buttons adds two additional buttons to the quantity input f
 2. WooCommerce Quantity Buttons on cart page
 
 == Changelog ==
+
+= 1.8 =
+* Fix 'maximum and minimum' issue
 
 = 1.7 =
 * Checking maximum and minimum when adding or removing quantity
