@@ -29,11 +29,11 @@ Since 1.9 it's possible to disable the plugin on the product page and/or the car
 
 **Disable plugin on product page:**
 
-`add_filter('show_on_product_page', '__return_false', 1);`
+`add_filter('show_on_product_page', '__return_false');`
 
 **Disable plugin on cart page:**
 
-`add_filter('show_on_cart_page', '__return_false', 1);`
+`add_filter('show_on_cart_page', '__return_false');`
 
 == Installation ==
 
