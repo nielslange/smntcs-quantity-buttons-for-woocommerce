@@ -55,3 +55,4 @@ jQuery(document.body).on('updated_cart_totals', function() {
     });
   });
 });
+

@@ -3,7 +3,7 @@
 Contributors: nielslange
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=H8FCEN4TDSYBN
 Tags: WooCommerce, Quantity Buttons, Increment Buttons, Plus Minus Buttons
-Version: 1.8
+Version: 1.9
 Requires at least: 4.5
 Tested up to: 5.2
 Requires PHP: 5.6
@@ -23,6 +23,20 @@ WooCommerce Quantity Buttons adds two additional buttons to the quantity input f
 * [WooCommerce Min/Max Quantities](https://woocommerce.com/products/minmax-quantities/)
 * [Woocommerce Minimum and Maximum Quantity](https://wordpress.org/plugins/woo-min-max-quantity-limit/)
 
+== Filter ==
+
+Since 1.9 it's possible to disable the plugin on the product page and/or the cart page. To do that, please add the corresponding filter to your functions.php file:
+
+```
+// Disable plugin on product page
+add_filter('show_on_product_page', '__return_false', 1);
+```
+
+```
+// Disable plugin on cart page
+add_filter('show_on_cart_page', '__return_false', 1);
+```
+
 == Installation ==
 
 1. Upload 'smntcs-woocommerce-quantity-buttons' to the '/wp-content/plugins/' directory
@@ -33,7 +47,10 @@ WooCommerce Quantity Buttons adds two additional buttons to the quantity input f
 1. WooCommerce Quantity Buttons on product page
 2. WooCommerce Quantity Buttons on cart page
 
-== Changelog ==
+== Change log ==
+
+= 1.9 =
+* Add filter to disable the plugin on product and/or cart page
 
 = 1.8 =
 * Fix 'maximum and minimum' issue
