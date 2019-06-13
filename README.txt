@@ -27,15 +27,13 @@ WooCommerce Quantity Buttons adds two additional buttons to the quantity input f
 
 Since 1.9 it's possible to disable the plugin on the product page and/or the cart page. To do that, please add the corresponding filter to your functions.php file:
 
-```
-// Disable plugin on product page
-add_filter('show_on_product_page', '__return_false', 1);
-```
+**Disable plugin on product page:**
 
-```
-// Disable plugin on cart page
-add_filter('show_on_cart_page', '__return_false', 1);
-```
+`add_filter('show_on_product_page', '__return_false', 1);`
+
+**Disable plugin on cart page:**
+
+`add_filter('show_on_cart_page', '__return_false', 1);`
 
 == Installation ==
 
