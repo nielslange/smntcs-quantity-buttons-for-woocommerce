@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-  $('.woocommerce .quantity').on('click', '.minus', function(e) {
+  $(document).on('click', '.minus', function(e) {
     var qty = $(this).parent().find('input.qty');
     var val = parseInt(qty.val());
     var step = qty.attr('step');
@@ -13,7 +13,7 @@ jQuery(document).ready(function($) {
       }
     }
   });
-  $('.woocommerce .quantity').on('click', '.plus', function(e) {
+  $(document).on('click', '.plus', function(e) {
     var qty = $(this).parent().find('input.qty');
     var val = parseInt(qty.val());
     var step = qty.attr('step');
@@ -28,7 +28,7 @@ jQuery(document).ready(function($) {
 
 jQuery(document.body).on('updated_cart_totals', function() {
   jQuery(document).ready(function($) {
-    $('.woocommerce .quantity').on('click', '.minus', function(e) {
+    $(document).on('click', '.minus', function(e) {
       var qty = $(this).parent().find('input.qty');
       var val = parseInt(qty.val());
       var step = qty.attr('step');
@@ -42,7 +42,7 @@ jQuery(document.body).on('updated_cart_totals', function() {
         }
       }
     });
-    $('.woocommerce .quantity').on('click', '.plus', function(e) {
+    $(document).on('click', '.plus', function(e) {
       var qty = $(this).parent().find('input.qty');
       var val = parseInt(qty.val());
       var step = qty.attr('step');
@@ -55,4 +55,3 @@ jQuery(document.body).on('updated_cart_totals', function() {
     });
   });
 });
-
