@@ -10,6 +10,6 @@
   -moz-appearance: textfield;
 }
 
-table.cart td.product-quantity .qty {
-  padding: .6180469716em 1.41575em;
+.woocommerce table.cart td.product-quantity .qty {
+  padding: 0.6180469716em 0.41575em;
 }
