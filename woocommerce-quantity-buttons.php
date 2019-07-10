@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: SMNTCS WooCommerce Quantity Buttons
- * Plugin URI: https://github.com/nielslange/git
+ * Plugin URI: https://github.com/nielslange/smntcs-woocommerce-quantity-buttons
  * Description: Add quantity buttons to WooCommerce product page
  * Author: Niels Lange <info@nielslange.de>
  * Author URI: https://nielslange.de
