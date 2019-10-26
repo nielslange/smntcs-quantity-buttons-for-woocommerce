@@ -19,3 +19,52 @@ Display quantity buttons on WooCommerce product page
 ## Plugin page
 
 You can find the plugin page on https://wordpress.org/plugins/smntcs-woocommerce-quantity-buttons/
+
+## Change log
+
+### 1.10
+
+* Add compatibility to [WooCommerce Composite Products](https://woocommerce.com/products/composite-products/) and [WooCommerce Product Bundles](https://woocommerce.com/products/product-bundles/)
+* Add compatibility for steps
+* Add button class for styling purposes
+* Adjust styling of quantity field on cart page
+
+### 1.9
+
+* Add filter to disable the plugin on product and/or cart page
+
+### 1.8
+
+* Fix 'maximum and minimum' issue
+
+### 1.7
+
+* Checking maximum and minimum when adding or removing quantity
+
+### 1.6
+
+* Refactored based on PHPCS and WPCS
+
+### 1.5
+
+* Fix 'Update cart' issue
+
+### 1.4
+
+* Test up to 5.1
+
+### 1.3
+
+* Enable quantity buttons on cart page
+
+### 1.2
+
+* Add compatibility to other [WooCommerce](https://wordpress.org/plugins/woocommerce/) extensions
+
+### 1.1
+
+* Hide HTML5 input spinner
+
+### 1.0
+
+* Initial release
