@@ -1,11 +1,13 @@
 # SMNTCS WooCommerce Quantity Buttons
 
-[![](https://img.shields.io/github/license/nielslange/smntcs-woocommerce-quantity-buttons.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
-[![](https://plugintests.com/plugins/smntcs-woocommerce-quantity-buttons/wp-badge.svg)](https://plugintests.com/plugins/smntcs-woocommerce-quantity-buttons/latest)
-[![](https://plugintests.com/plugins/smntcs-woocommerce-quantity-buttons/php-badge.svg)](https://plugintests.com/plugins/smntcs-woocommerce-quantity-buttons/latest)
-[![](https://img.shields.io/wordpress/plugin/dt/smntcs-woocommerce-quantity-buttons.svg)](https://wordpress.org/plugins/smntcs-woocommerce-quantity-buttons/)
-[![](https://img.shields.io/wordpress/plugin/v/smntcs-woocommerce-quantity-buttons.svg)](https://wordpress.org/plugins/smntcs-woocommerce-quantity-buttons/)
-[![](https://img.shields.io/github/tag/nielslange/smntcs-woocommerce-quantity-buttons.svg)](https://wordpress.org/plugins/smntcs-woocommerce-quantity-buttons/)
+[![Support Level](https://img.shields.io/badge/support-active-green.svg)](#support-level)
+[![Build Status](https://api.travis-ci.com/nielslange/smntcs-woocommerce-quantity-buttons.svg?branch=master)](https://api.travis-ci.com/nielslange/smntcs-woocommerce-quantity-buttons)
+[![GPLv3 License](https://img.shields.io/github/license/nielslange/smntcs-woocommerce-quantity-buttons.svg)](https://www.gnu.org/licenses/gpl.html)
+[![Compatible to WordPress version](https://plugintests.com/plugins/smntcs-woocommerce-quantity-buttons/wp-badge.svg)](https://plugintests.com/plugins/smntcs-woocommerce-quantity-buttons/latest)
+[![Compatible to PHP version](https://plugintests.com/plugins/smntcs-woocommerce-quantity-buttons/php-badge.svg)](https://plugintests.com/plugins/smntcs-woocommerce-quantity-buttons/latest)
+[![Downloads](https://img.shields.io/wordpress/plugin/dt/smntcs-woocommerce-quantity-buttons.svg)](https://wordpress.org/plugins/smntcs-woocommerce-quantity-buttons/)
+[![Plugin Version](https://img.shields.io/wordpress/plugin/v/smntcs-woocommerce-quantity-buttons.svg)](https://wordpress.org/plugins/smntcs-woocommerce-quantity-buttons/)
+[![Tag Version](https://img.shields.io/github/tag/nielslange/smntcs-woocommerce-quantity-buttons.svg)](https://wordpress.org/plugins/smntcs-woocommerce-quantity-buttons/)
 
 Display quantity buttons on WooCommerce product page
 
