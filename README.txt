@@ -5,7 +5,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: WooCommerce, Quantity Buttons, Increment Buttons, Plus Minus Buttons
 Version: 1.10
 Requires at least: 4.5
-Tested up to: 5.2
+Tested up to: 5.3
 Requires PHP: 5.6
 License: GPL2+
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -53,6 +53,9 @@ Contributions are more than welcome. Simply head over to [Github](https://github
 
 == Change log ==
 
+= 1.11 =
+* Test up to 5.3
+
 = 1.10 =
 * Add compatibility to [WooCommerce Composite Products](https://woocommerce.com/products/composite-products/) and [WooCommerce Product Bundles](https://woocommerce.com/products/product-bundles/)
 * Add compatibility for steps
@@ -67,6 +70,7 @@ Contributions are more than welcome. Simply head over to [Github](https://github
 
 = 1.7 =
 * Checking maximum and minimum when adding or removing quantity
+* Test up to 5.2
 
 = 1.6 =
 * Refactored based on PHPCS and WPCS
