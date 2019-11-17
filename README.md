@@ -13,8 +13,8 @@ Display quantity buttons on WooCommerce product page
 
 ## Installation
 
-1. Upload 'smntcs-woocommerce-quantity-buttons' to the '/wp-content/plugins/' directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
+1. Upload `smntcs-woocommerce-quantity-buttons` to the `/wp-content/plugins/` directory
+2. Activate the plugin through the `Plugins` menu in WordPress
 
 ## Plugin page
 
@@ -35,7 +35,7 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-woocommerce-quan
 
 ### 1.8
 
-* Fix 'maximum and minimum' issue
+* Fix `Maximum and minimum` issue
 
 ### 1.7
 
@@ -47,7 +47,7 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-woocommerce-quan
 
 ### 1.5
 
-* Fix 'Update cart' issue
+* Fix `Update cart` issue
 
 ### 1.4
 

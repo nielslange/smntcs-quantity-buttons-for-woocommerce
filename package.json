@@ -1,0 +1,26 @@
+{
+	"name": "smntcs-woocommerce-quantity-buttons",
+	"version": "1.0.0",
+	"description": "Display quantity buttons on WooCommerce product page",
+	"author": "Niels Lange",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"WordPress",
+		"Plugin",
+		"SMNTCS WooCommerce Quantity Buttons"
+	],
+	"homepage": "https://github.com/nielslange/smntcs-woocommerce-quantity-buttons#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/nielslange/smntcs-woocommerce-quantity-buttons.git"
+	},
+	"bugs": {
+		"url": "https://github.com/nielslange/smntcs-woocommerce-quantity-buttons/issues"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^5.0.0"
+	},
+	"scripts": {
+		"lint:pkg-json": "wp-scripts lint-pkg-json"
+	}
+}
