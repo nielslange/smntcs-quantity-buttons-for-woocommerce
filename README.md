@@ -22,6 +22,10 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-woocommerce-quan
 
 ## Changelog
 
+### 1.11
+
+* Test up to 5.3
+
 ### 1.10
 
 * Add compatibility to [WooCommerce Composite Products](https://woocommerce.com/products/composite-products/) and [WooCommerce Product Bundles](https://woocommerce.com/products/product-bundles/)
@@ -40,6 +44,7 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-woocommerce-quan
 ### 1.7
 
 * Checking maximum and minimum when adding or removing quantity
+* Test up to 5.2
 
 ### 1.6
 
