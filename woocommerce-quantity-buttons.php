@@ -23,6 +23,8 @@
 
 /**
  * Avoid direct plugin access
+ *
+ * @since 1.0.0
  */
 if ( ! defined( 'ABSPATH' ) ) {
 	die( '¯\_(ツ)_/¯' );
@@ -30,11 +32,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /**
  * Define plugin version number
+ *
+ * @since 1.0.0
  */
-define( 'SMNTCSWCQB_VERSION', '1.10' );
+define( 'SMNTCSWCQB_VERSION', '1.11' );
 
 /**
  * Show warning if WooCommerce is not active or WooCommerce version < 2.3
+ *
+ * @since 1.0.0
  */
 add_action(
 	'admin_notices',
@@ -52,6 +58,8 @@ add_action(
 
 /**
  * Load textdomain
+ *
+ * @since 1.0.0
  */
 add_action(
 	'plugins_loaded',
@@ -62,6 +70,8 @@ add_action(
 
 /**
  * Enqueue scripts and styles
+ *
+ * @since 1.0.0
  */
 add_action(
 	'wp_enqueue_scripts',
@@ -88,6 +98,8 @@ add_action(
 
 /**
  * Load WooCommerce template
+ *
+ * @since 1.0.0
  */
 add_filter(
 	'woocommerce_locate_template',
@@ -123,4 +135,21 @@ add_filter(
 	},
 	1,
 	3
+);
+
+/**
+ * Add theme support
+ *
+ * @since 1.12.0
+ */
+add_action(
+	'wp_enqueue_scripts',
+	function() {
+		switch ( get_template() ) {
+			case 'twentytwenty':
+				wp_enqueue_style( 'custom-twentytwenty-style', plugins_url( 'themes/twentytwenty.css', __FILE__ ), null, SMNTCSWCQB_VERSION, 'screen' );
+				break;
+		}
+	},
+	11
 );
