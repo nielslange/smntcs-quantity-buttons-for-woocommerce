@@ -1,0 +1,14 @@
+.single-product form.cart input[type="button"] {
+	width: inherit;
+}
+
+.single-product form.cart input {
+	display: inline-block;
+	height: 55px;
+	text-align: center;
+	margin: 0;
+}
+
+.single-product .single_add_to_cart_button {
+	height: 55px;
+}
