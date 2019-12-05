@@ -75,9 +75,4 @@
     </properties>
   </rule>
 
-  <!-- Custom rules -->
-  <rule ref="PSR2">
-    <exclude name="Squiz.ControlStructures.ControlSignature.NewlineAfterOpenBrace"/>
-  </rule>
-
 </ruleset>
