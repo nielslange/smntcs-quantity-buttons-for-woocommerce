@@ -23,7 +23,7 @@
 
 /**
  * Avoid direct plugin access
- * 
+ *
  * @since 1.0.0
  */
 if ( ! defined( 'ABSPATH' ) ) {
@@ -32,14 +32,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /**
  * Define plugin version number
- * 
+ *
  * @since 1.0.0
  */
 define( 'SMNTCSWCQB_VERSION', '1.11' );
 
 /**
  * Show warning if WooCommerce is not active or WooCommerce version < 2.3
- * 
+ *
  * @since 1.0.0
  */
 add_action(
@@ -58,7 +58,7 @@ add_action(
 
 /**
  * Load textdomain
- * 
+ *
  * @since 1.0.0
  */
 add_action(
@@ -70,7 +70,7 @@ add_action(
 
 /**
  * Enqueue scripts and styles
- * 
+ *
  * @since 1.0.0
  */
 add_action(
@@ -93,14 +93,12 @@ add_action(
 			wp_dequeue_style( 'custom-style' );
 		}
 
-		
-
 	}
 );
 
 /**
  * Load WooCommerce template
- * 
+ *
  * @since 1.0.0
  */
 add_filter(
@@ -141,13 +139,17 @@ add_filter(
 
 /**
  * Add theme support
- * 
+ *
  * @since 1.12.0
  */
-add_action ( 'wp_enqueue_scripts', function() {
-	switch ( get_template() ) {
-		case 'twentytwenty':
+add_action(
+	'wp_enqueue_scripts',
+	function() {
+		switch ( get_template() ) {
+			case 'twentytwenty':
 				wp_enqueue_style( 'custom-twentytwenty-style', plugins_url( 'themes/twentytwenty.css', __FILE__ ), null, SMNTCSWCQB_VERSION, 'screen' );
-			break;
-	}	
-}, 11 );
+				break;
+		}
+	},
+	11
+);
