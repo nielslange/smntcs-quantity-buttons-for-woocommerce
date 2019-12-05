@@ -3,7 +3,7 @@
 Contributors: nielslange, derweltbuerger, marcqueralt
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=H8FCEN4TDSYBN
 Tags: WooCommerce, Quantity Buttons, Increment Buttons, Plus Minus Buttons
-Version: 1.10
+Version: 1.11
 Requires at least: 4.5
 Tested up to: 5.3
 Requires PHP: 5.6
