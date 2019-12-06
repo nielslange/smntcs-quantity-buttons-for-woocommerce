@@ -7,8 +7,8 @@ Version: 1.12
 Requires at least: 4.5
 Tested up to: 5.3
 Requires PHP: 5.6
-License: GPL2+
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+License: GPL3+
+License URI: http://www.gnu.org/licenses/gpl.html
 
 Display quantity buttons on WooCommerce product page
 
