@@ -11,8 +11,8 @@
  * Requires at least: 3.4
  * Requires PHP: 5.6
  * Tested up to: 5.3
- * License: GPL2+
- * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ * License: GPL3+
+ * License URI: https://www.gnu.org/licenses/gpl.html
  *
  * @category   Plugin
  * @package    WordPress
