@@ -3,9 +3,9 @@
 Contributors: nielslange, derweltbuerger, marcqueralt
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=H8FCEN4TDSYBN
 Tags: WooCommerce, Quantity Buttons, Increment Buttons, Plus Minus Buttons
-Version: 1.12
+Version: 1.13
 Requires at least: 4.5
-Tested up to: 5.3
+Tested up to: 5.4
 Requires PHP: 5.6
 License: GPL3+
 License URI: http://www.gnu.org/licenses/gpl.html
@@ -26,6 +26,12 @@ WooCommerce Quantity Buttons adds two additional buttons to the quantity input f
 * [WooCommerce Product Bundles](https://woocommerce.com/products/product-bundles/)
 
 == Filter ==
+
+Since 1.13 it's possible to flip the -/+ buttons to +/-. To do that, please add the corresponding filter to your functions.php file:
+
+**Flip quantity buttons:**
+
+add_filter( flip_quantity_buttons, ‘__return_true’ );
 
 Since 1.9 it's possible to disable the plugin on the product page and/or the cart page. To do that, please add the corresponding filter to your functions.php file:
 
@@ -52,6 +58,11 @@ Contributions are more than welcome. Simply head over to [Github](https://github
 2. WooCommerce Quantity Buttons on cart page
 
 == Change log ==
+
+= 1.13 =
+* [Add filter to flip buttons](https://github.com/nielslange/smntcs-woocommerce-quantity-buttons/issues/17)
+* Tested up to WooCommerce 4.0
+* Tested up to WordPress 5.4
 
 = 1.12 =
 * [Add compatibility for Twenty Twenty theme](https://github.com/nielslange/smntcs-woocommerce-quantity-buttons/issues/11)
