@@ -20,6 +20,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+$flip_quantity_buttons = apply_filters( 'flip_quantity_buttons', false );
+
 if ( $max_value && $min_value === $max_value ) {
 	?>
 	<div class="quantity hidden">
@@ -30,7 +32,11 @@ if ( $max_value && $min_value === $max_value ) {
 	?>
 	<div class="quantity">
 		<label class="screen-reader-text" for="smntcswcb"><?php esc_html_e( 'Quantity', 'smntcs-woocommerce-quantity-buttons' ); ?></label>
-		<input class="minus" type="button" value="-">
+		<?php if ( $flip_quantity_buttons ) : ?>
+			<input class="plus" type="button" value="+">
+		<?php else : ?>
+			<input class="minus" type="button" value="-">
+		<?php endif ?>
 		<input type="number"
 					id="smntcswcb" step="<?php echo esc_attr( $step ); ?>" min="<?php echo esc_attr( $min_value ); ?>" 
 					<?php if ( isset( $max_value ) && 0 < $max_value ) : ?>
@@ -41,7 +47,11 @@ if ( $max_value && $min_value === $max_value ) {
 					title="<?php echo esc_attr_x( 'Qty', 'Product quantity input tooltip', 'smntcs-woocommerce-quantity-buttons' ); ?>"
 					class="input-text qty text"
 					inputmode="<?php echo esc_attr( $inputmode ); ?>" />
-		<input class="plus" type="button" value="+">
+		<?php if ( $flip_quantity_buttons ) : ?>
+			<input class="minus" type="button" value="-">
+		<?php else : ?>
+			<input class="plus" type="button" value="+">
+		<?php endif ?>
 	</div>
 	<?php
 }

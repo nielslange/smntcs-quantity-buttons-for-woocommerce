@@ -7,10 +7,10 @@
  * Author URI: https://nielslange.de
  * Text Domain: smntcs-woocommerce-quantity-buttons
  * Domain Path: /languages/
- * Version: 1.12
- * Requires at least: 3.4
+ * Version: 1.13
+ * Requires at least: 4.5
+ * Tested up to: 5.4
  * Requires PHP: 5.6
- * Tested up to: 5.3
  * License: GPL3+
  * License URI: https://www.gnu.org/licenses/gpl.html
  *
@@ -35,7 +35,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @since 1.0.0
  */
-define( 'SMNTCSWCQB_VERSION', '1.12' );
+define( 'SMNTCSWCQB_VERSION', '1.13' );
 
 /**
  * Show warning if WooCommerce is not active or WooCommerce version < 2.3

@@ -22,12 +22,17 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-woocommerce-quan
 
 ## Changelog
 
+### 1.13
+* [Add filter to flip buttons](https://github.com/nielslange/smntcs-woocommerce-quantity-buttons/issues/17)
+* Tested up to WooCommerce 4.0
+* Tested up to WordPress 5.4
+
 ### 1.12
 * [Add compatibility for Twenty Twenty theme](https://github.com/nielslange/smntcs-woocommerce-quantity-buttons/issues/11)
 * [Validate markup](https://github.com/nielslange/smntcs-woocommerce-quantity-buttons/issues/10)
 
 ### 1.11
-* Test up to 5.3
+* Test up to WordPress 5.3
 
 ### 1.10
 * Add compatibility to [WooCommerce Composite Products](https://woocommerce.com/products/composite-products/) and [WooCommerce Product Bundles](https://woocommerce.com/products/product-bundles/)
@@ -43,7 +48,7 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-woocommerce-quan
 
 ### 1.7
 * Checking maximum and minimum when adding or removing quantity
-* Test up to 5.2
+* Test up to WordPress 5.2
 
 ### 1.6
 * Refactored based on PHPCS and WPCS
@@ -52,7 +57,7 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-woocommerce-quan
 * Fix `Update cart` issue
 
 ### 1.4
-* Test up to 5.1
+* Test up to WordPress 5.1
 
 ### 1.3
 * Enable quantity buttons on cart page
