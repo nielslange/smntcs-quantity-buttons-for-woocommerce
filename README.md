@@ -8,6 +8,7 @@
 [![Downloads](https://img.shields.io/wordpress/plugin/dt/smntcs-woocommerce-quantity-buttons.svg)](https://wordpress.org/plugins/smntcs-woocommerce-quantity-buttons/)
 [![Plugin Version](https://img.shields.io/wordpress/plugin/v/smntcs-woocommerce-quantity-buttons.svg)](https://wordpress.org/plugins/smntcs-woocommerce-quantity-buttons/)
 [![Tag Version](https://img.shields.io/github/tag/nielslange/smntcs-woocommerce-quantity-buttons.svg)](https://wordpress.org/plugins/smntcs-woocommerce-quantity-buttons/)
+![Deploy to WordPress.org](https://github.com/nielslange/smntcs-woocommerce-quantity-buttons/workflows/Deploy%20to%20WordPress.org/badge.svg)
 
 Display quantity buttons on WooCommerce product page
 
