@@ -47,6 +47,9 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-woocommerce-quan
 
 ## Changelog
 
+### 1.14
+* [Add compatibility for grouped products](https://github.com/nielslange/smntcs-woocommerce-quantity-buttons/issues/21)
+
 ### 1.13
 * [Add filter to flip buttons](https://github.com/nielslange/smntcs-woocommerce-quantity-buttons/issues/17)
 * Tested up to WooCommerce 4.0
