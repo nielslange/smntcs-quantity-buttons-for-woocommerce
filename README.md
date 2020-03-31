@@ -12,6 +12,30 @@
 
 Display quantity buttons on WooCommerce product page
 
+## Filter
+
+Since 1.13 it's possible to flip the -/+ buttons to +/-. To do that, please add the corresponding filter to your functions.php file:
+
+### Flip quantity buttons:
+
+```
+add_filter( 'flip_quantity_buttons', '__return_true' );
+```
+
+Since 1.9 it's possible to disable the plugin on the product page and/or the cart page. To do that, please add the corresponding filter to your functions.php file:
+
+### Disable plugin on product page:
+
+```
+add_filter( 'show_on_product_page', '__return_false' );
+```
+
+### Disable plugin on cart page:
+
+```
+add_filter( 'show_on_cart_page', '__return_false' );
+```
+
 ## Installation
 
 1. Upload `smntcs-woocommerce-quantity-buttons` to the `/wp-content/plugins/` directory
