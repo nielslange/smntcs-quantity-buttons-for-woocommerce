@@ -47,6 +47,9 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-woocommerce-quan
 
 ## Changelog
 
+### 1.15
+* [Fix nulled product quantity after release 1.14](https://github.com/nielslange/smntcs-woocommerce-quantity-buttons/issues/24)
+
 ### 1.14
 * [Add compatibility for grouped products](https://github.com/nielslange/smntcs-woocommerce-quantity-buttons/issues/21)
 
