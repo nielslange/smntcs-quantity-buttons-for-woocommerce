@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: SMNTCS WooCommerce Quantity Buttons
+ * Plugin Name: SMNTCS Quantity Buttons for WooCommerce
  * Plugin URI: https://github.com/nielslange/smntcs-woocommerce-quantity-buttons
  * Description: Add quantity buttons to WooCommerce product page
  * Author: Niels Lange <info@nielslange.de>
@@ -16,7 +16,7 @@
  *
  * @category   Plugin
  * @package    WordPress
- * @subpackage SMNTCS WooCommerce Quantity Buttons
+ * @subpackage SMNTCS Quantity Buttons for WooCommerce
  * @author     Niels Lange <info@nielslange.de>
  * @license    http://opensource.org/licenses/gpl-license.php GNU Public License
  */
@@ -49,7 +49,7 @@ add_action(
 
 		if ( ! class_exists( 'WooCommerce' ) || version_compare( $woocommerce->version, '2.3', '<' ) ) {
 			$class   = 'notice notice-warning is-dismissible';
-			$message = __( 'SMNTCS WooCommerce Quantity Buttons requires at least WooCommerce 2.3.', 'smntcs-woocommerce-quantity-buttons' );
+			$message = __( 'SMNTCS Quantity Buttons for WooCommerce requires at least WooCommerce 2.3.', 'smntcs-woocommerce-quantity-buttons' );
 
 			printf( '<div class="%1$s"><p>%2$s</p></div>', esc_attr( $class ), esc_html( $message ) );
 		}
