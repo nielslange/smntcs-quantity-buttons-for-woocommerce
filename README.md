@@ -1,4 +1,4 @@
-# SMNTCS WooCommerce Quantity Buttons
+# SMNTCS Quantity Buttons for WooCommerce
 
 [![Support Level](https://img.shields.io/badge/support-active-green.svg)](#support-level)
 [![Build Status](https://api.travis-ci.com/nielslange/smntcs-woocommerce-quantity-buttons.svg?branch=master)](https://api.travis-ci.com/nielslange/smntcs-woocommerce-quantity-buttons)
@@ -49,6 +49,7 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-woocommerce-quan
 
 ### 1.15
 * [Fix nulled product quantity after release 1.14](https://github.com/nielslange/smntcs-woocommerce-quantity-buttons/issues/24)
+* [Rename plugin to "SMNTCS Quantity Buttons for WooCommerce"](https://github.com/nielslange/smntcs-woocommerce-quantity-buttons/issues/25)
 
 ### 1.14
 * [Add compatibility for grouped products](https://github.com/nielslange/smntcs-woocommerce-quantity-buttons/issues/21)

@@ -1,4 +1,4 @@
-=== SMNTCS WooCommerce Quantity Buttons ===
+=== SMNTCS Quantity Buttons for WooCommerce ===
 
 Contributors: nielslange, derweltbuerger, marcqueralt
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=H8FCEN4TDSYBN
@@ -14,7 +14,7 @@ Display quantity buttons on WooCommerce product page
 
 == Description ==
 
-WooCommerce Quantity Buttons adds two additional buttons to the quantity input field on the WooCommerce product page to easily increase and decrease the quantity via button click.
+SMNTCS Quantity Buttons for WooCommerce adds two additional buttons to the quantity input field on the WooCommerce product page to easily increase and decrease the quantity via button click.
 
 === Compatible with ===
 
@@ -67,6 +67,7 @@ Contributions are more than welcome. Simply head over to [Github](https://github
 
 = 1.15 =
 * [Fix nulled product quantity after release 1.14](https://github.com/nielslange/smntcs-woocommerce-quantity-buttons/issues/24)
+* [Rename plugin to "SMNTCS Quantity Buttons for WooCommerce"](https://github.com/nielslange/smntcs-woocommerce-quantity-buttons/issues/25)
 
 = 1.14 =
 * [Add compatibility for grouped products](https://github.com/nielslange/smntcs-woocommerce-quantity-buttons/issues/21)
