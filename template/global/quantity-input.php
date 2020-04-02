@@ -29,6 +29,15 @@ if ( $max_value && $min_value === $max_value ) {
 	</div>
 	<?php
 } else {
+	
+	if ( $min_value && ( $input_value < $min_value ) ) {
+		$input_value = $min_value;
+	}
+
+	if ( $max_value && ( $input_value > $max_value ) ) {
+		$input_value = $max_value;
+	}
+
 	?>
 	<div class="quantity">
 		<label class="screen-reader-text" for="smntcswcb"><?php esc_html_e( 'Quantity', 'smntcs-woocommerce-quantity-buttons' ); ?></label>
@@ -43,7 +52,7 @@ if ( $max_value && $min_value === $max_value ) {
 						max="<?php echo esc_attr( $max_value ); ?>"
 					<?php endif; ?>
 					name="<?php echo esc_attr( $input_name ); ?>"
-					value="<?php echo esc_attr( $min_value ); ?>"
+					value="<?php echo esc_attr( $input_value ); ?>"
 					title="<?php echo esc_attr_x( 'Qty', 'Product quantity input tooltip', 'smntcs-woocommerce-quantity-buttons' ); ?>"
 					class="input-text qty text"
 					inputmode="<?php echo esc_attr( $inputmode ); ?>" />
