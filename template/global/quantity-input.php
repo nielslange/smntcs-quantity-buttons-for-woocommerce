@@ -38,6 +38,10 @@ if ( $max_value && $min_value === $max_value ) {
 		$input_value = $max_value;
 	}
 
+	if ( '' === $input_value ) {
+		$input_value = 0;
+	}
+
 	?>
 	<div class="quantity">
 		<label class="screen-reader-text" for="smntcswcb"><?php esc_html_e( 'Quantity', 'smntcs-woocommerce-quantity-buttons' ); ?></label>
