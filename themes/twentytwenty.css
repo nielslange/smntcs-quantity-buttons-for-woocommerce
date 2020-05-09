@@ -1,14 +1,18 @@
-.single-product form.cart input[type="button"] {
+.woocommerce.single-product form.cart input[type="button"] {
 	width: inherit;
 }
 
-.single-product form.cart input {
+.woocommerce.single-product form.cart input,
+.woocommerce-cart-form .quantity input {
 	display: inline-block;
 	height: 55px;
 	text-align: center;
 	margin: 0;
+	line-height: 1;
 }
 
-.single-product .single_add_to_cart_button {
+.woocommerce.single-product .single_add_to_cart_button {
 	height: 55px;
+	line-height: 1;
+	margin-top: 1px;
 }
