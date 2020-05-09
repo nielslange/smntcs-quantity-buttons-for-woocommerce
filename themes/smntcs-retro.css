@@ -1,0 +1,30 @@
+.woocommerce.single-product div.product form.cart div.quantity {
+	margin: 0px 9px 0 0;
+}
+
+.woocommerce.single-product form.cart input[type="button"] {
+	width: 2em;
+}
+
+.woocommerce.single-product form.cart input {
+	background: var(--nord1);
+	border: 1px solid var(--nord3);
+	border-radius: 2px;
+	color: var(--nord4);
+	display: inline-block;
+	height: 2em;
+	text-align: center;
+	margin: 0;
+	line-height: 1;
+}
+
+.woocommerce.single-product form.cart input:focus,
+.woocommerce.single-product form.cart input:hover {
+	background: var(--nord3);
+	color: var(--nord4);
+}
+
+.woocommerce.single-product .single_add_to_cart_button {
+	height: 1em;
+	line-height: 1;
+}
