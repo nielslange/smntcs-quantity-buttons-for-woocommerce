@@ -7,7 +7,7 @@
  * Author URI: https://nielslange.de
  * Text Domain: smntcs-quantity-buttons-for-woocommerce
  * Domain Path: /languages/
- * Version: 1.16
+ * Version: 1.17
  * Requires at least: 4.5
  * Requires PHP: 5.6
  * Tested up to: 5.4

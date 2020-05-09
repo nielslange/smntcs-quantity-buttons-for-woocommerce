@@ -3,7 +3,7 @@
 Contributors: nielslange, derweltbuerger, marcqueralt
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=H8FCEN4TDSYBN
 Tags: WooCommerce, Quantity Buttons, Increment Buttons, Plus Minus Buttons
-Version: 1.16
+Version: 1.17
 Requires at least: 4.5
 Requires PHP: 5.6
 Tested up to: 5.4
@@ -67,8 +67,15 @@ Contributions are more than welcome. Simply head over to [Github](https://github
 
 == Change log ==
 
+= 1.17 =
+* [Add SMNTCS Retro theme compatibility](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/34)
+* [Adjust button styles on Twenty Twenty cart page](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/33)
+* [Declaring required and supported WooCommerce version](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/30)
+* [Rename handlers](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/35)
+* [Rename plugin slug](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/36)
+
 = 1.16 =
-* [Fixed grouped products issue](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/21)
+* [Fix grouped products issue](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/21)
 
 = 1.15 =
 * [Fix nulled product quantity after release 1.14](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/24)
@@ -79,8 +86,8 @@ Contributions are more than welcome. Simply head over to [Github](https://github
 
 = 1.13 =
 * [Add filter to flip buttons](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/17)
-* Tested up to WooCommerce 4.0
-* Tested up to WordPress 5.4
+* Test up to WooCommerce 4.0
+* Test up to WordPress 5.4
 
 = 1.12 =
 * [Add compatibility for Twenty Twenty theme](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/11)
@@ -102,11 +109,11 @@ Contributions are more than welcome. Simply head over to [Github](https://github
 * Fix 'maximum and minimum' issue
 
 = 1.7 =
-* Checking maximum and minimum when adding or removing quantity
+* Check maximum and minimum when adding or removing quantity
 * Test up to 5.2
 
 = 1.6 =
-* Refactored based on PHPCS and WPCS
+* Refactor based on PHPCS and WPCS
 
 = 1.5 =
 * Fix 'Update cart' issue

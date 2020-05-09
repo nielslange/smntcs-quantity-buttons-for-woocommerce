@@ -46,8 +46,16 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-quantity-buttons
 
 ## Changelog
 
+
+### 1.17
+* [Add SMNTCS Retro theme compatibility](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/34)
+* [Adjust button styles on Twenty Twenty cart page](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/33)
+* [Declaring required and supported WooCommerce version](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/30)
+* [Rename handlers](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/35)
+* [Rename plugin slug](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/36)
+
 ### 1.16
-* [Fixed grouped products issue](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/21)
+* [Fix grouped products issue](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/21)
 
 ### 1.15
 * [Fix nulled product quantity after release 1.14](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/24)
@@ -58,15 +66,15 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-quantity-buttons
 
 ### 1.13
 * [Add filter to flip buttons](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/17)
-* Tested up to WooCommerce 4.0
-* Tested up to WordPress 5.4
+* Test up to WooCommerce 4.0
+* Test up to WordPress 5.4
 
 ### 1.12
 * [Add compatibility for Twenty Twenty theme](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/11)
 * [Validate markup](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/10)
 
 ### 1.11
-* Test up to WordPress 5.3
+* Test up to 5.3
 
 ### 1.10
 * Add compatibility to [WooCommerce Composite Products](https://woocommerce.com/products/composite-products/) and [WooCommerce Product Bundles](https://woocommerce.com/products/product-bundles/)
@@ -78,20 +86,20 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-quantity-buttons
 * Add filter to disable the plugin on product and/or cart page
 
 ### 1.8
-* Fix `Maximum and minimum` issue
+* Fix 'maximum and minimum' issue
 
 ### 1.7
-* Checking maximum and minimum when adding or removing quantity
-* Test up to WordPress 5.2
+* Check maximum and minimum when adding or removing quantity
+* Test up to 5.2
 
 ### 1.6
-* Refactored based on PHPCS and WPCS
+* Refactor based on PHPCS and WPCS
 
 ### 1.5
-* Fix `Update cart` issue
+* Fix 'Update cart' issue
 
 ### 1.4
-* Test up to WordPress 5.1
+* Test up to 5.1
 
 ### 1.3
 * Enable quantity buttons on cart page
