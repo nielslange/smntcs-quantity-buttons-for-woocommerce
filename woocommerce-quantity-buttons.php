@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: SMNTCS Quantity Buttons for WooCommerce
- * Plugin URI: https://github.com/nielslange/smntcs-woocommerce-quantity-buttons
+ * Plugin URI: https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce
  * Description: Add quantity buttons to WooCommerce product page
  * Author: Niels Lange <info@nielslange.de>
  * Author URI: https://nielslange.de
- * Text Domain: smntcs-woocommerce-quantity-buttons
+ * Text Domain: smntcs-quantity-buttons-for-woocommerce
  * Domain Path: /languages/
  * Version: 1.16
  * Requires at least: 4.5
@@ -49,7 +49,7 @@ add_action(
 
 		if ( ! class_exists( 'WooCommerce' ) || version_compare( $woocommerce->version, '2.3', '<' ) ) {
 			$class   = 'notice notice-warning is-dismissible';
-			$message = __( 'SMNTCS Quantity Buttons for WooCommerce requires at least WooCommerce 2.3.', 'smntcs-woocommerce-quantity-buttons' );
+			$message = __( 'SMNTCS Quantity Buttons for WooCommerce requires at least WooCommerce 2.3.', 'smntcs-quantity-buttons-for-woocommerce' );
 
 			printf( '<div class="%1$s"><p>%2$s</p></div>', esc_attr( $class ), esc_html( $message ) );
 		}
@@ -64,7 +64,7 @@ add_action(
 add_action(
 	'plugins_loaded',
 	function () {
-		load_plugin_textdomain( 'smntcs-woocommerce-quantity-buttons', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+		load_plugin_textdomain( 'smntcs-quantity-buttons-for-woocommerce', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 	}
 );
 

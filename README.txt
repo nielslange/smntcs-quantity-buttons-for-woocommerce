@@ -51,11 +51,11 @@ add_filter( 'show_on_cart_page', '__return_false' );
 
 == Contribute ==
 
-Contributions are more than welcome. Simply head over to [Github](https://github.com/nielslange/smntcs-woocommerce-quantity-buttons/pulls) and open a pull request.
+Contributions are more than welcome. Simply head over to [Github](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/pulls) and open a pull request.
 
 == Installation ==
 
-1. Upload 'smntcs-woocommerce-quantity-buttons' to the '/wp-content/plugins/' directory
+1. Upload 'smntcs-quantity-buttons-for-woocommerce' to the '/wp-content/plugins/' directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
 == Screenshots ==
@@ -66,23 +66,23 @@ Contributions are more than welcome. Simply head over to [Github](https://github
 == Change log ==
 
 = 1.16 =
-* [Fixed grouped products issue](https://github.com/nielslange/smntcs-woocommerce-quantity-buttons/issues/21)
+* [Fixed grouped products issue](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/21)
 
 = 1.15 =
-* [Fix nulled product quantity after release 1.14](https://github.com/nielslange/smntcs-woocommerce-quantity-buttons/issues/24)
-* [Rename plugin to "SMNTCS Quantity Buttons for WooCommerce"](https://github.com/nielslange/smntcs-woocommerce-quantity-buttons/issues/25)
+* [Fix nulled product quantity after release 1.14](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/24)
+* [Rename plugin to "SMNTCS Quantity Buttons for WooCommerce"](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/25)
 
 = 1.14 =
-* [Add compatibility for grouped products](https://github.com/nielslange/smntcs-woocommerce-quantity-buttons/issues/21)
+* [Add compatibility for grouped products](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/21)
 
 = 1.13 =
-* [Add filter to flip buttons](https://github.com/nielslange/smntcs-woocommerce-quantity-buttons/issues/17)
+* [Add filter to flip buttons](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/17)
 * Tested up to WooCommerce 4.0
 * Tested up to WordPress 5.4
 
 = 1.12 =
-* [Add compatibility for Twenty Twenty theme](https://github.com/nielslange/smntcs-woocommerce-quantity-buttons/issues/11)
-* [Validate markup](https://github.com/nielslange/smntcs-woocommerce-quantity-buttons/issues/10)
+* [Add compatibility for Twenty Twenty theme](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/11)
+* [Validate markup](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/10)
 
 = 1.11 =
 * Test up to 5.3
