@@ -5,8 +5,10 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: WooCommerce, Quantity Buttons, Increment Buttons, Plus Minus Buttons
 Version: 1.16
 Requires at least: 4.5
-Tested up to: 5.4
 Requires PHP: 5.6
+Tested up to: 5.4
+WC requires at least: 3.0
+WC tested up to: 4.1.0
 License: GPL3+
 License URI: http://www.gnu.org/licenses/gpl.html
 
