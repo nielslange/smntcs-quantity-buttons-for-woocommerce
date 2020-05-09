@@ -37,7 +37,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @since 1.0.0
  */
-define( 'SMNTCSWCQB_VERSION', '1.16' );
+define( 'SMNTCSWCQB_VERSION', '1.17' );
 
 /**
  * Show warning if WooCommerce is not active or WooCommerce version < 2.3
@@ -149,7 +149,10 @@ add_action(
 	function() {
 		switch ( get_template() ) {
 			case 'twentytwenty':
-				wp_enqueue_style( 'custom-twentytwenty-style', plugins_url( 'themes/twentytwenty.css', __FILE__ ), null, SMNTCSWCQB_VERSION, 'screen' );
+				wp_enqueue_style( 'smntcswcqb-twentytwenty-style', plugins_url( 'themes/twentytwenty.css', __FILE__ ), null, SMNTCSWCQB_VERSION, 'screen' );
+				break;
+			case 'smntcs-retro':
+				wp_enqueue_style( 'smntcswcqb-smntcs-retro-style', plugins_url( 'themes/smntcs-retro.css', __FILE__ ), null, SMNTCSWCQB_VERSION, 'screen' );
 				break;
 		}
 	},
