@@ -9,7 +9,7 @@
 [![Plugin Version](https://img.shields.io/wordpress/plugin/v/smntcs-woocommerce-quantity-buttons.svg)](https://wordpress.org/plugins/smntcs-woocommerce-quantity-buttons/)
 [![Tag Version](https://img.shields.io/github/tag/nielslange/smntcs-woocommerce-quantity-buttons.svg)](https://wordpress.org/plugins/smntcs-woocommerce-quantity-buttons/)
 
-Display quantity buttons on the WooCommerce product page
+Display the quantity increment buttons on the WooCommerce product page and the WooCommerce cart page.
 
 ## Filter
 
@@ -45,6 +45,9 @@ add_filter( 'show_on_cart_page', '__return_false' );
 You can find the plugin on https://wordpress.org/plugins/smntcs-quantity-buttons-for-woocommerce/.
 
 ## Changelog
+
+### 1.19
+* Updated plugin description
 
 ### 1.18
 * Tested up to WordPress 5.5.x and WooCommerce 4.4.x
