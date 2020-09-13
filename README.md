@@ -1,4 +1,4 @@
-# SMNTCS Quantity Buttons for WooCommerce
+# Quantity Increment Buttons for WooCommerce
 
 [![Support Level](https://img.shields.io/badge/support-active-green.svg)](#support-level)
 [![Build Status](https://api.travis-ci.com/nielslange/smntcs-woocommerce-quantity-buttons.svg?branch=master)](https://api.travis-ci.com/nielslange/smntcs-woocommerce-quantity-buttons)
@@ -9,7 +9,7 @@
 [![Plugin Version](https://img.shields.io/wordpress/plugin/v/smntcs-woocommerce-quantity-buttons.svg)](https://wordpress.org/plugins/smntcs-woocommerce-quantity-buttons/)
 [![Tag Version](https://img.shields.io/github/tag/nielslange/smntcs-woocommerce-quantity-buttons.svg)](https://wordpress.org/plugins/smntcs-woocommerce-quantity-buttons/)
 
-Display quantity buttons on WooCommerce product page
+Display quantity buttons on the WooCommerce product page
 
 ## Filter
 
@@ -46,6 +46,9 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-quantity-buttons
 
 ## Changelog
 
+### 1.18
+* Tested up to WordPress 5.5.x and WooCommerce 4.4.x
+* Updated plugin icon
 
 ### 1.17
 * [Add SMNTCS Retro theme compatibility](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/34)

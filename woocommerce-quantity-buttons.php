@@ -1,24 +1,24 @@
 <?php
 /**
- * Plugin Name: SMNTCS Quantity Buttons for WooCommerce
+ * Plugin Name: Quantity Increment Buttons for WooCommerce
  * Plugin URI: https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce
- * Description: Add quantity buttons to WooCommerce product page
+ * Description: Add quantity buttons to the WooCommerce product page
  * Author: Niels Lange <info@nielslange.de>
  * Author URI: https://nielslange.de
  * Text Domain: smntcs-quantity-buttons-for-woocommerce
  * Domain Path: /languages/
- * Version: 1.17
+ * Version: 1.18
  * Requires at least: 4.5
  * Requires PHP: 5.6
- * Tested up to: 5.4
+ * Tested up to: 5.5
  * WC requires at least: 3.0
- * WC tested up to: 4.1.0
+ * WC tested up to: 4.4.0
  * License: GPL3+
  * License URI: https://www.gnu.org/licenses/gpl.html
  *
  * @category   Plugin
  * @package    WordPress
- * @subpackage SMNTCS Quantity Buttons for WooCommerce
+ * @subpackage SMNTCS Quantity Increment Buttons for WooCommerce
  * @author     Niels Lange <info@nielslange.de>
  * @license    http://opensource.org/licenses/gpl-license.php GNU Public License
  */
@@ -49,9 +49,9 @@ add_action(
 	function () {
 		global $woocommerce;
 
-		if ( ! class_exists( 'WooCommerce' ) || version_compare( $woocommerce->version, '2.3', '<' ) ) {
+		if ( ! class_exists( 'WooCommerce' ) || version_compare( $woocommerce->version, '3.0', '<' ) ) {
 			$class   = 'notice notice-warning is-dismissible';
-			$message = __( 'SMNTCS Quantity Buttons for WooCommerce requires at least WooCommerce 2.3.', 'smntcs-quantity-buttons-for-woocommerce' );
+			$message = __( 'Quantity Increment Buttons for WooCommerce requires at least WooCommerce 3.0.', 'smntcs-quantity-buttons-for-woocommerce' );
 
 			printf( '<div class="%1$s"><p>%2$s</p></div>', esc_attr( $class ), esc_html( $message ) );
 		}
