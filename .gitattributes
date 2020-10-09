@@ -1,0 +1,14 @@
+* text=auto
+
+*.php text eol=lf
+*.js text eol=lf
+*.css text eol=lf linguist-generated
+*.scss text eol=lf
+*.json text eol=lf
+
+*.txt text eol=crlf
+
+*.png binary
+*.jpg binary
+
+*.map linguist-generated

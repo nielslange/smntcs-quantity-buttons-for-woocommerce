@@ -149,10 +149,10 @@ add_action(
 	function() {
 		switch ( get_template() ) {
 			case 'twentytwenty':
-				wp_enqueue_style( 'smntcswcqb-twentytwenty-style', plugins_url( 'themes/twentytwenty.css', __FILE__ ), null, SMNTCSWCQB_VERSION, 'screen' );
+				wp_enqueue_style( 'smntcswcqb-twentytwenty-style', plugins_url( 'assets/css/twentytwenty.css', __FILE__ ), null, SMNTCSWCQB_VERSION, 'screen' );
 				break;
 			case 'smntcs-retro':
-				wp_enqueue_style( 'smntcswcqb-smntcs-retro-style', plugins_url( 'themes/smntcs-retro.css', __FILE__ ), null, SMNTCSWCQB_VERSION, 'screen' );
+				wp_enqueue_style( 'smntcswcqb-smntcs-retro-style', plugins_url( 'assets/css/smntcs-retro.css', __FILE__ ), null, SMNTCSWCQB_VERSION, 'screen' );
 				break;
 		}
 	},
