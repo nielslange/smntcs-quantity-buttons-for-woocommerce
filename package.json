@@ -18,9 +18,29 @@
 		"url": "https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues"
 	},
 	"devDependencies": {
-		"@wordpress/env": "^2.1.0"
+		"@wordpress/browserslist-config": "^2.7.0",
+		"@wordpress/env": "^2.1.0",
+		"eslint": "^7.10.0",
+		"node-sass": "^4.14.1",
+		"nord": "^0.2.1",
+		"npm-run-all": "^4.1.5",
+		"stylelint": "^13.7.2",
+		"stylelint-config-recommended-scss": "^4.2.0",
+		"stylelint-config-wordpress": "^17.0.0",
+		"uglify-js": "^3.11.1"
 	},
+	"browserslist": [
+		"extends @wordpress/browserslist-config"
+	],
 	"scripts": {
+		"build:scss": "node-sass assets/scss/style.scss style.css --output-style compressed --indent-type tab --indent-width 1 --source-map true",
+		"build:smntcs-retro": "node-sass assets/scss/themes/smntcs-retro.scss assets/css/smntcs-retro.css --output-style compressed --indent-type tab --indent-width 1 --source-map true",
+		"build:twentytwenty": "node-sass assets/scss/themes/twentytwenty.scss assets/css/twentytwenty.css --output-style compressed --indent-type tab --indent-width 1 --source-map true",
+		"build:js": "uglifyjs assets/js/button-handler.js -o button-handler.js --source-map",
+		"build": "run-s \"build:*\"",
+		"lint:scss": "stylelint **/*.scss",
+		"lint:js": "eslint assets/js",
+		"lint:js-fix": "eslint assets/js --fix",
 		"wp-env": "wp-env"
 	}
 }
