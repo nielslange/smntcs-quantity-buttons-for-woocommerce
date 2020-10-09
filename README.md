@@ -1,4 +1,4 @@
-# Quantity Increment Buttons for WooCommerce
+# SMNTCS Quantity Increment Buttons for WooCommerce
 
 [![Support Level](https://img.shields.io/badge/support-active-green.svg)](#support-level)
 [![Build Status](https://api.travis-ci.com/nielslange/smntcs-woocommerce-quantity-buttons.svg?branch=master)](https://api.travis-ci.com/nielslange/smntcs-woocommerce-quantity-buttons)
