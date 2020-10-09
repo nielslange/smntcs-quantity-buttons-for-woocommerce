@@ -1,18 +1,18 @@
 <?php
 /**
- * Plugin Name: Quantity Increment Buttons for WooCommerce
+ * Plugin Name: SMNTCS Quantity Increment Buttons for WooCommerce
  * Plugin URI: https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce
  * Description: Display the quantity increment buttons on the WooCommerce product page and the WooCommerce cart page.
  * Author: Niels Lange <info@nielslange.de>
  * Author URI: https://nielslange.de
  * Text Domain: smntcs-quantity-buttons-for-woocommerce
  * Domain Path: /languages/
- * Version: 1.19
+ * Version: 1.20
  * Requires at least: 4.5
  * Requires PHP: 5.6
  * Tested up to: 5.5
  * WC requires at least: 3.0
- * WC tested up to: 4.4.0
+ * WC tested up to: 4.5
  * License: GPL3+
  * License URI: https://www.gnu.org/licenses/gpl.html
  *
@@ -29,7 +29,7 @@
  * @since 1.0.0
  */
 if ( ! defined( 'ABSPATH' ) ) {
-	die( '¯\_(ツ)_/¯' );
+	exit; // Exit if accessed directly.
 }
 
 /**

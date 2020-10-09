@@ -46,11 +46,14 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-quantity-buttons
 
 ## Changelog
 
+### 1.20
+* Tested up to WooCommerce 4.5
+
 ### 1.19
 * Updated plugin description
 
 ### 1.18
-* Tested up to WordPress 5.5.x and WooCommerce 4.4.x
+* Tested up to WordPress 5.5 and WooCommerce 4.4
 * Updated plugin icon
 
 ### 1.17
@@ -80,7 +83,7 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-quantity-buttons
 * [Validate markup](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/10)
 
 ### 1.11
-* Test up to 5.3
+* Test up to WordPress 5.3
 
 ### 1.10
 * Add compatibility to [WooCommerce Composite Products](https://woocommerce.com/products/composite-products/) and [WooCommerce Product Bundles](https://woocommerce.com/products/product-bundles/)
@@ -96,7 +99,7 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-quantity-buttons
 
 ### 1.7
 * Check maximum and minimum when adding or removing quantity
-* Test up to 5.2
+* Test up to WordPress 5.2
 
 ### 1.6
 * Refactor based on PHPCS and WPCS
@@ -105,7 +108,7 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-quantity-buttons
 * Fix 'Update cart' issue
 
 ### 1.4
-* Test up to 5.1
+* Test up to WordPress 5.1
 
 ### 1.3
 * Enable quantity buttons on cart page

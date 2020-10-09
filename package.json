@@ -7,7 +7,7 @@
 	"keywords": [
 		"WordPress",
 		"Plugin",
-		"SMNTCS WooCommerce Quantity Buttons"
+		"SMNTCS Quantity Increment Buttons for WooCommerce"
 	],
 	"homepage": "https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce#readme",
 	"repository": {
@@ -18,9 +18,7 @@
 		"url": "https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^5.0.0"
 	},
 	"scripts": {
-		"lint:pkg-json": "wp-scripts lint-pkg-json"
 	}
 }
