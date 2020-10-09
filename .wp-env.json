@@ -1,0 +1,12 @@
+{
+	"plugins": [
+		".",
+		"https://downloads.wordpress.org/plugin/woocommerce.zip"
+	],
+	"themes": [
+		"https://downloads.wordpress.org/theme/smntcs-retro.1.11.zip",
+		"https://downloads.wordpress.org/theme/storefront.2.7.0.zip"
+	],
+	"port": 1000,
+	"testsPort": 1001
+}
