@@ -37,7 +37,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @since 1.0.0
  */
-define( 'SMNTCSWCQB_VERSION', '1.17' );
+define( 'SMNTCSWCQB_VERSION', '1.20' );
 
 /**
  * Show warning if WooCommerce is not active or WooCommerce version < 2.3

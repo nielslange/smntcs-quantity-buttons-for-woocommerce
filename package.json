@@ -18,7 +18,9 @@
 		"url": "https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues"
 	},
 	"devDependencies": {
+		"@wordpress/env": "^2.1.0"
 	},
 	"scripts": {
+		"wp-env": "wp-env"
 	}
 }
