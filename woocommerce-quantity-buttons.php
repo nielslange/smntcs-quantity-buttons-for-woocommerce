@@ -79,7 +79,7 @@ add_action(
 	'wp_enqueue_scripts',
 	function () {
 
-		wp_enqueue_script( 'smntcswcqb-script', plugins_url( 'button-handler.js', __FILE__ ), array( 'jquery' ), SMNTCSWCQB_VERSION, true );
+		wp_enqueue_script( 'smntcswcqb-script', plugins_url( 'button-handler.js', __FILE__ ), null, SMNTCSWCQB_VERSION, true );
 		wp_enqueue_style( 'smntcswcqb-style', plugins_url( 'style.css', __FILE__ ), null, SMNTCSWCQB_VERSION, 'screen' );
 
 		$show_on_product_page = apply_filters( 'show_on_product_page', true );

@@ -42,5 +42,8 @@
 		"lint:js": "eslint assets/js",
 		"lint:js-fix": "eslint assets/js --fix",
 		"wp-env": "wp-env"
+	},
+	"dependencies": {
+		"nodegit": "^0.27.0"
 	}
 }

@@ -5,97 +5,31 @@
  * @license    http://opensource.org/licenses/gpl-license.php GNU Public License
  */
 
-jQuery( document ).ready(
-	function( $ ) {
-		$( 'form.cart, form.woocommerce-cart-form' ).on(
-			'click',
-			'.minus',
-			function() {
-				var qty = $( this ).parent().find( 'input.qty' );
-				var val = parseInt( qty.val() );
-				var step = qty.attr( 'step' );
-				var min = qty.attr( 'min' );
+( function() {
+	// Prepare variables.
+	var qty = document.querySelector( 'input.qty' );
+	var remove = document.querySelector( 'input.minus' );
+	var add = document.querySelector( 'input.plus' );
+	var min = document.querySelector( 'input.qty' ).getAttribute( 'min' );
+	var max = document.querySelector( 'input.qty' ).getAttribute( 'max' );
+	var step = document.querySelector( 'input.qty' ).getAttribute( 'step' );
 
-				if ( val > min ) {
-					step = 'undefined' !== typeof ( step ) ? parseInt( step ) : 1;
+	// Decrease quantity.
+	remove.addEventListener( 'click', function( event ) {
+		if ( qty.value > parseInt( min ) ) {
+			qty.value = +qty.value - +step;
+		}
+	}, false );
 
-					if ( val > 0 && val - step >= min ) {
-						qty.val( val - step ).change();
-					}
-				}
+	// Increase quantity.
+	add.addEventListener( 'click', function( event ) {
+		if ( max ) {
+			var temp = +qty.value + +step;
+			if ( temp < parseInt( max ) ) {
+				qty.value = temp;
 			}
-		);
-		$( 'form.cart, form.woocommerce-cart-form' ).on(
-			'click',
-			'.plus',
-			function() {
-				var qty = $( this ).parent().find( 'input.qty' );
-				var val = parseInt( qty.val() );
-				var step = qty.attr( 'step' );
-				var max = qty.attr( 'max' );
-
-				if ( max ) {
-					if ( val < max ) {
-						step = 'undefined' !== typeof ( step ) ? parseInt( step ) : 1;
-						if ( val + step <= max ) {
-							qty.val( val + step ).change();
-						}
-					}
-				} else {
-					step = 'undefined' !== typeof ( step ) ? parseInt( step ) : 1;
-					qty.val( val + step ).change();
-				}
-			}
-		);
-	}
-);
-
-jQuery( document.body ).on(
-	'updated_cart_totals',
-	function() {
-		jQuery( document ).ready(
-			function( $ ) {
-				$( '.woocommerce .quantity' ).on(
-					'click',
-					'.minus',
-					function() {
-						var qty = $( this ).parent().find( 'input.qty' );
-						var val = parseInt( qty.val() );
-						var step = qty.attr( 'step' );
-						var min = qty.attr( 'min' );
-
-						if ( val > min ) {
-							step = 'undefined' !== typeof ( step ) ? parseInt( step ) : 1;
-
-							if ( val > 0 && val - step >= min ) {
-								qty.val( val - step ).change();
-							}
-						}
-					}
-				);
-				$( '.woocommerce .quantity' ).on(
-					'click',
-					'.plus',
-					function() {
-						var qty = $( this ).parent().find( 'input.qty' );
-						var val = parseInt( qty.val() );
-						var step = qty.attr( 'step' );
-						var max = qty.attr( 'max' );
-
-						if ( max ) {
-							if ( val < max ) {
-								step = 'undefined' !== typeof ( step ) ? parseInt( step ) : 1;
-								if ( val + step <= max ) {
-									qty.val( val + step ).change();
-								}
-							}
-						} else {
-							step = 'undefined' !== typeof ( step ) ? parseInt( step ) : 1;
-							qty.val( val + step ).change();
-						}
-					}
-				);
-			}
-		);
-	}
-);
+		} else {
+			qty.value = +qty.value + +step;
+		}
+	}, false );
+}() );
