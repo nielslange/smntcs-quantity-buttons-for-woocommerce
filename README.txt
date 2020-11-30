@@ -69,6 +69,7 @@ Contributions are more than welcome. Simply head over to [Github](https://github
 
 = 1.20 =
 * Tested up to WooCommerce 4.5
+* Replaced the jQuery code with Vanilla JS
 
 = 1.19 =
 * Updated plugin description
