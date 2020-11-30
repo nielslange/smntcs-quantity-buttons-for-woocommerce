@@ -42,7 +42,7 @@ add_filter( 'show_on_cart_page', '__return_false' );
 
 ## Plugin page
 
-You can find the plugin on https://wordpress.org/plugins/smntcs-quantity-buttons-for-woocommerce/.
+You can find the plugin on https://wordpress.org/plugins/smntcs-woocommerce-quantity-buttons/.
 
 ## Changelog
 
