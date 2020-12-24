@@ -46,6 +46,10 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-quantity-buttons
 
 ## Changelog
 
+### 1.21
+* [Fix Vanilla JS bug](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/61)
+* Tested up to WordPress 5.6
+
 ### 1.20
 * Tested up to WooCommerce 4.5
 * Replaced the jQuery code with Vanilla JS
