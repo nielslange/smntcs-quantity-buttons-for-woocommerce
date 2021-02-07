@@ -46,6 +46,9 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-woocommerce-quan
 
 ## Changelog
 
+### 1.22
+* Fix JS error for empty cart
+
 ### 1.21
 * [Fix Vanilla JS bug](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/61)
 * Tested up to WordPress 5.6
