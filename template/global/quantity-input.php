@@ -29,7 +29,7 @@ if ( $max_value && $min_value === $max_value ) {
 	</div>
 	<?php
 } else {
-	
+
 	if ( $min_value && ( $input_value < $min_value ) ) {
 		$input_value = $min_value;
 	}

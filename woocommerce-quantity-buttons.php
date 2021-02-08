@@ -44,11 +44,11 @@ define( 'SMNTCSWCQB_VERSION', '1.23' );
  */
 function smntcsqbfw_handle_notice() {
 	global $woocommerce;
-	
+
 	if ( ! class_exists( 'WooCommerce' ) || version_compare( $woocommerce->version, '3.0', '<' ) ) {
 		$class   = 'notice notice-warning is-dismissible';
 		$message = __( 'SMNTCS Quantity Increment Buttons for WooCommerce requires at least WooCommerce 3.0.', 'smntcs-quantity-buttons-for-woocommerce' );
-	
+
 		printf( '<div class="%1$s"><p>%2$s</p></div>', esc_attr( $class ), esc_html( $message ) );
 	}
 }
