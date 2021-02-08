@@ -3,7 +3,7 @@
 Contributors: nielslange, derweltbuerger, marcqueralt
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=H8FCEN4TDSYBN
 Tags: WooCommerce, Quantity Buttons, Increment Buttons, Plus Minus Buttons
-Version: 1.21
+Version: 1.23
 Requires at least: 4.5
 Requires PHP: 5.6
 Tested up to: 5.6
@@ -66,6 +66,12 @@ Contributions are more than welcome. Simply head over to [Github](https://github
 2. WooCommerce Quantity Buttons on cart page
 
 == Change log ==
+
+= 1.23 =
+* [Ensure that multiple quantities can be adjusted](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/65)
+
+= 1.22 =
+* Fix JS error for empty cart
 
 = 1.21 =
 * [Fix Vanilla JS bug](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/61)
