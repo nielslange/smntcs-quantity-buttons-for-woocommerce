@@ -12,8 +12,6 @@
 	var quantities = document.querySelectorAll( '.quantity ');
 	var button = document.querySelector( 'button[name="update_cart"]' );
 
-	console.log(quantities);
-
 	quantities.forEach( element => {
 		// Prepare variables.
 		var qty = element.querySelector( 'input.qty' );
