@@ -9,8 +9,10 @@
 	// Deactivate button handler directly after call.
 	jQuery( document.body ).off( 'updated_cart_totals' );
 
-	var quantities = document.querySelectorAll( '.product-quantity > .quantity ');
+	var quantities = document.querySelectorAll( '.quantity ');
 	var button = document.querySelector( 'button[name="update_cart"]' );
+
+	console.log(quantities);
 
 	quantities.forEach( element => {
 		// Prepare variables.
