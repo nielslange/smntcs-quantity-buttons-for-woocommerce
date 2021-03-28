@@ -48,9 +48,10 @@
 		// Increase quantity.
 		if ( add ) {
 			add.addEventListener( 'click', function() {
+				max = element.querySelector( 'input.qty' ).getAttribute( 'max' );
 				if ( max ) {
 					var temp = parseInt( qty.value ) + parseInt( step );
-					if ( temp < parseInt( max ) ) {
+					if ( temp <= parseInt( max ) ) {
 						qty.value = temp;
 					}
 				} else {
@@ -59,7 +60,7 @@
 				updateCartButton();
 			}, false );
 		}
-		
+
 	} );
 
 	// Call function after cart tottotals update.
