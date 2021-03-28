@@ -7,12 +7,12 @@
  * Author URI: https://nielslange.de
  * Text Domain: smntcs-quantity-buttons-for-woocommerce
  * Domain Path: /languages/
- * Version: 1.24
+ * Version: 1.25
  * Requires at least: 4.5
  * Requires PHP: 5.6
- * Tested up to: 5.6
- * WC requires at least: 3.0
- * WC tested up to: 4.5
+ * Tested up to: 5.7
+ * WC requires at least: 5.0
+ * WC tested up to: 5.2
  * License: GPL3+
  * License URI: https://www.gnu.org/licenses/gpl.html
  *
