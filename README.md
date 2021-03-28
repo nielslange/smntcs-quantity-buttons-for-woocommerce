@@ -46,6 +46,9 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-woocommerce-quan
 
 ## Changelog
 
+### 1.24
+* [Fix quantity bug on single product page](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/67)
+
 ### 1.23
 * [Ensure that multiple quantities can be adjusted](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/65)
 
