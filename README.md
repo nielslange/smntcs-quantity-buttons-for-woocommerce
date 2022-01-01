@@ -2,7 +2,7 @@
 
 [![Support Level](https://img.shields.io/badge/support-active-green.svg)](#support-level)
 [![Build Status](https://api.travis-ci.com/nielslange/smntcs-quantity-buttons-for-woocommerce.svg?branch=trunk)](https://api.travis-ci.com/nielslange/smntcs-woocommerce-quantity-buttons)
-[![GPLv3 License](https://img.shields.io/github/license/nielslange/smntcs-woocommerce-quantity-buttons.svg)](https://www.gnu.org/licenses/gpl.html)
+[![GPLv2 License](https://img.shields.io/github/license/nielslange/smntcs-woocommerce-quantity-buttons.svg)](https://www.gnu.org/licenses/gpl.html)
 [![Compatible to WordPress version](https://plugintests.com/plugins/smntcs-woocommerce-quantity-buttons/wp-badge.svg)](https://plugintests.com/plugins/smntcs-woocommerce-quantity-buttons/latest)
 [![Compatible to PHP version](https://plugintests.com/plugins/smntcs-woocommerce-quantity-buttons/php-badge.svg)](https://plugintests.com/plugins/smntcs-woocommerce-quantity-buttons/latest)
 [![Downloads](https://img.shields.io/wordpress/plugin/dt/smntcs-woocommerce-quantity-buttons.svg)](https://wordpress.org/plugins/smntcs-woocommerce-quantity-buttons/)
