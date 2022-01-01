@@ -24,8 +24,7 @@
   <!-- Include the WordPress rulesets. -->
   <rule ref="WordPress-Extra"/>
   <rule ref="WordPress-Docs"/>
-  <rule ref="WPThemeReview"/>
-  
+
   <!-- We want to allow exceptions for the filename naming, since we are working with a theme. -->
   <!-- See https://github.com/WordPress/WordPress-Coding-Standards/wiki/Customizable-sniff-properties#themes-allow-filename-exceptions -->
   <rule ref="WordPress.Files.FileName">
