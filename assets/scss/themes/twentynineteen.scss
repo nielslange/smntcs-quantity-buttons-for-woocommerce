@@ -1,0 +1,19 @@
+.woocommerce.single-product form.cart input {
+	width: 2.5em;
+	&[type="button"] {
+		padding: 0.76rem;
+	}
+}
+
+.woocommerce table.cart td.product-quantity {
+	.qty {
+		padding: 0.36rem 0.66rem;
+	}
+
+	input {
+		width: 2.5em;
+		&[type="button"] {
+			padding: 0.76rem;
+		}
+	}
+}

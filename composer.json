@@ -1,36 +1,43 @@
 {
 	"name": "nielslange/smntcs-quantity-buttons-for-woocommerce",
-	"type": "plugin",
 	"description": "Display quantity buttons on WooCommerce product page",
+	"homepage": "https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce",
+	"support": {
+		"issues": "https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues",
+		"source": "https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce"
+	},
+	"type": "wordpress-plugin",
 	"keywords": [
 		"WordPress",
 		"Plugin",
 		"SMNTCS Quantity Increment Buttons for WooCommerce"
 	],
-	"homepage": "https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce",
-	"license": "GPL-3.0-or-later",
+	"license": "GPL-2.0-or-later",
 	"authors": [
 		{
-			"name": "Contributors",
-			"homepage": "https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/graphs/contributors"
+			"name": "Niels Lange",
+			"email": "info@nielslange.de"
 		}
 	],
 	"require": {
-		"php": ">=5.6"
+		"php": ">=7.0"
 	},
 	"require-dev": {
-		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
-		"php-parallel-lint/php-parallel-lint": "^1.2",
-		"wptrt/wpthemereview": "^0.2.1"
-		
+		"overtrue/phplint": "2.3.5",
+		"phpcompatibility/phpcompatibility-wp": "^2.1",
+		"squizlabs/php_codesniffer": "^3.6",
+		"wp-coding-standards/wpcs": "^2.3",
+		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.1"
 	},
 	"scripts": {
-		"checkcs": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs --runtime-set testVersion 5.6-",
-		"fixcs": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcbf --runtime-set testVersion 5.6-",
-		"lint": "@php ./vendor/bin/parallel-lint --exclude .git --exclude vendor ."
+		"phpcbf": "phpcbf --standard=phpcs.dist.xml .",
+		"phpcs": "phpcs --standard=phpcs.dist.xml .",
+		"phplint": "phplint"
 	},
-	"support": {
-		"issues": "https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues",
-		"source": "https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce"
+	"config": {
+		"allow-plugins": {
+			"composer/package-versions-deprecated": true,
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
 	}
 }

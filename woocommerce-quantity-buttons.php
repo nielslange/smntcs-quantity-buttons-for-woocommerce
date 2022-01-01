@@ -8,39 +8,29 @@
  * Text Domain: smntcs-quantity-buttons-for-woocommerce
  * Domain Path: /languages/
  * Version: 1.25
+ * Stable tag: 1.25
  * Requires at least: 4.5
- * Requires PHP: 5.6
- * Tested up to: 5.7
+ * Tested up to: 5.8
+ * Requires at least: 5.0
+ * Requires PHP: 7.0
  * WC requires at least: 5.0
- * WC tested up to: 5.2
- * License: GPL3+
- * License URI: https://www.gnu.org/licenses/gpl.html
+ * WC tested up to: 6.0
+ * License: GPLv2 or later
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  *
- * @category   Plugin
- * @package    WordPress
- * @subpackage SMNTCS Quantity Increment Buttons for WooCommerce
- * @author     Niels Lange <info@nielslange.de>
- * @license    http://opensource.org/licenses/gpl-license.php GNU Public License
+ * @package SMNTCS
  */
 
-/**
- * Avoid direct plugin access
- *
- * @since 1.0.0
- */
+// Avoid direct plugin access.
 defined( 'ABSPATH' ) || exit;
 
-/**
- * Define plugin version number
- *
- * @since 1.0.0
- */
-define( 'SMNTCSWCQB_VERSION', '1.23' );
+// Define plugin version number.
+define( 'SMNTCSWCQB_VERSION', '1.25' );
 
 /**
- * Show warning if WooCommerce is not active or WooCommerce version < 2.3
+ * Show warning if WooCommerce is not active or WooCommerce version < 2.3.
  *
- * @since 1.0.0
+ * @return void
  */
 function smntcsqbfw_handle_notice() {
 	global $woocommerce;
@@ -55,19 +45,9 @@ function smntcsqbfw_handle_notice() {
 add_action( 'admin_notices', 'smntcsqbfw_handle_notice' );
 
 /**
- * Load textdomain
+ * Enqueue scripts and styles.
  *
- * @since 1.0.0
- */
-function smntcsqbfw_load_textdomain() {
-	load_plugin_textdomain( 'smntcs-quantity-buttons-for-woocommerce', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
-}
-add_action( 'plugins_loaded', 'smntcsqbfw_load_textdomain' );
-
-/**
- * Enqueue scripts and styles
- *
- * @since 1.0.0
+ * @return void
  */
 function smntcsqbfw_enqueue_scripts_and_styles() {
 	wp_enqueue_script( 'smntcswcqb-script', plugins_url( 'button-handler.js', __FILE__ ), null, SMNTCSWCQB_VERSION, true );
@@ -89,13 +69,12 @@ function smntcsqbfw_enqueue_scripts_and_styles() {
 add_action( 'wp_enqueue_scripts', 'smntcsqbfw_enqueue_scripts_and_styles' );
 
 /**
- * Load WooCommerce template
+ * Load WooCommerce template.
  *
  * @param string $template The name and path of the template.
  * @param string $template_name The name of the template.
  * @param string $template_path The path of the template.
  * @return string The name and path of the template.
- * @since 1.0.0
  */
 function smntcsqbfw_load_template( $template, $template_name, $template_path ) {
 	$show_on_product_page = apply_filters( 'show_on_product_page', true );
@@ -129,14 +108,20 @@ function smntcsqbfw_load_template( $template, $template_name, $template_path ) {
 add_filter( 'woocommerce_locate_template', 'smntcsqbfw_load_template', 1, 3 );
 
 /**
- * Add theme support
+ * Add theme support.
  *
- * @since 1.12.0
+ * @return void
  */
 function smntcsqbfw_add_theme_support() {
 	switch ( get_template() ) {
+		case 'twentynineteen':
+			wp_enqueue_style( 'smntcswcqb-twentynineteen-style', plugins_url( 'assets/css/twentynineteen.css', __FILE__ ), null, SMNTCSWCQB_VERSION, 'screen' );
+			break;
 		case 'twentytwenty':
 			wp_enqueue_style( 'smntcswcqb-twentytwenty-style', plugins_url( 'assets/css/twentytwenty.css', __FILE__ ), null, SMNTCSWCQB_VERSION, 'screen' );
+			break;
+		case 'twentytwentyone':
+			wp_enqueue_script( 'smntcswcqb-twentytwentyone-script', plugins_url( 'assets/js/twentytwentyone.js', __FILE__ ), null, SMNTCSWCQB_VERSION, true );
 			break;
 		case 'smntcs-retro':
 			wp_enqueue_style( 'smntcswcqb-smntcs-retro-style', plugins_url( 'assets/css/smntcs-retro.css', __FILE__ ), null, SMNTCSWCQB_VERSION, 'screen' );
