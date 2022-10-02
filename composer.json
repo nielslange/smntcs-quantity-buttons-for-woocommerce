@@ -20,7 +20,7 @@
 		}
 	],
 	"require": {
-		"php": ">=7.0"
+		"php": ">=5.6"
 	},
 	"require-dev": {
 		"overtrue/phplint": "3.0.6",
@@ -30,8 +30,8 @@
 		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.1"
 	},
 	"scripts": {
-		"phpcbf": "phpcbf --standard=phpcs.dist.xml .",
-		"phpcs": "phpcs --standard=phpcs.dist.xml .",
+		"phpcbf": "phpcbf --standard=phpcs.xml .",
+		"phpcs": "phpcs --standard=phpcs.xml .",
 		"phplint": "phplint"
 	},
 	"config": {

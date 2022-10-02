@@ -1,18 +1,16 @@
 === SMNTCS Quantity Increment Buttons for WooCommerce ===
 
-Contributors: nielslange, derweltbuerger, marcqueralt
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=H8FCEN4TDSYBN
-Tags: WooCommerce, Quantity Buttons, Increment Buttons, Plus Minus Buttons
-Version: 1.26
-Stable tag: 1.26
-Requires at least: 4.5
-Tested up to: 5.8
-Requires at least: 5.0
-Requires PHP: 7.0
+Contributors: 		  nielslange, derweltbuerger, marcqueralt
+Tags: 				  WooCommerce, Quantity Buttons, Increment Buttons, Plus Minus Buttons
+Stable tag: 		  2.0
+Requires at least: 	  4.5
+Tested up to: 		  6.0
+Requires at least:	  5.0
+Requires PHP: 		  5.6
 WC requires at least: 5.0
-WC tested up to: 6.0
-License: GPLv2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+WC tested up to: 	  6.9
+License: 			  GPLv3+
+License URI: 		  https://www.gnu.org/licenses/gpl-3.0.en.html
 
 Display the quantity increment buttons on the WooCommerce product page and the WooCommerce cart page.
 
@@ -64,105 +62,133 @@ Contributions are more than welcome. Simply head over to [Github](https://github
 
 == Screenshots ==
 
-1. WooCommerce Quantity Buttons on product page
-2. WooCommerce Quantity Buttons on cart page
+1. WooCommerce Quantity Buttons on the product page.
+2. WooCommerce Quantity Buttons on the cart page.
 
 == Change log ==
 
 = 1.26 (2022.01.01) =
-* Test up to WordPress 5.8
-* Add support for Twenty Twenty theme
-* Add support for Twenty Twenty-One theme
+
+- Test up to WP 5.8
+- Add support for Twenty Twenty theme
+- Add support for Twenty Twenty-One theme
 
 = 1.25 (2020.03.28) =
-* [Fix max quantity problem](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/70)
+
+- [Fix max quantity problem](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/70)
 
 = 1.24 (2020.03.28) =
-* [Fix quantity bug on single product page](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/67)
+
+- [Fix quantity bug on single product page](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/67)
 
 = 1.23 (2020.02.08) =
-* [Ensure that multiple quantities can be adjusted](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/65)
+
+- [Ensure that multiple quantities can be adjusted](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/65)
 
 = 1.22 (2020.02.07) =
-* Fix JS error for empty cart
+
+- Fix JS error for empty cart
 
 = 1.21 (2020.02.07) =
-* [Fix Vanilla JS bug](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/61)
-* Test up to WordPress 5.6
+
+- [Fix Vanilla JS bug](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/61)
+- Test up to WP 5.6
 
 = 1.20 (2020.11.30) =
-* Test up to WooCommerce 4.5
-* Replaced the jQuery code with Vanilla JS
+
+- Test up to WC 4.5
+- Replaced the jQuery code with Vanilla JS
 
 = 1.19 (2020.09.13) =
-* Updated plugin description
+
+- Updated plugin description
 
 = 1.18 (2020.09.13) =
-* Test up to WordPress 5.5 and WooCommerce 4.4
-* Updated plugin icon
+
+- Test up to WC 4.4
+- Test up to WP 5.5
+- Updated plugin icon
 
 = 1.17 (2020.05.20) =
-* [Add SMNTCS Retro theme compatibility](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/34)
-* [Adjust button styles on Twenty Twenty cart page](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/33)
-* [Declaring required and supported WooCommerce version](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/30)
-* [Rename handlers](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/35)
-* [Rename plugin slug](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/36)
+
+- [Add SMNTCS Retro theme compatibility](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/34)
+- [Adjust button styles on Twenty Twenty cart page](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/33)
+- [Declaring required and supported WooCommerce version](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/30)
+- [Rename handlers](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/35)
+- [Rename plugin slug](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/36)
 
 = 1.16 (2020.04.04) =
-* [Fix grouped products issue](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/21)
+
+- [Fix grouped products issue](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/21)
 
 = 1.15 (2020.04.02) =
-* [Fix nulled product quantity after release 1.14](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/24)
-* [Rename plugin to "SMNTCS Quantity Buttons for WooCommerce"](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/25)
+
+- [Fix nulled product quantity after release 1.14](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/24)
+- [Rename plugin to "SMNTCS Quantity Buttons for WooCommerce"](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/25)
 
 = 1.14 (2020.03.31) =
-* [Add compatibility for grouped products](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/21)
+
+- [Add compatibility for grouped products](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/21)
 
 = 1.13 (2020.03.11) =
-* [Add filter to flip buttons](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/17)
-* Test up to WooCommerce 4.0
-* Test up to WordPress 5.4
+
+- [Add filter to flip buttons](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/17)
+- Test up to WC 4.0
+- Test up to WP 5.4
 
 = 1.12 (2019.12.06) =
-* [Add compatibility for Twenty Twenty theme](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/11)
-* [Validate markup](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/10)
+
+- [Add compatibility for Twenty Twenty theme](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/11)
+- [Validate markup](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/10)
 
 = 1.11 (2019.11.18) =
-* Test up to 5.3
+
+- Test up to 5.3
 
 = 1.10 (2019.06.28) =
-* Add compatibility to [WooCommerce Composite Products](https://woocommerce.com/products/composite-products/) and [WooCommerce Product Bundles](https://woocommerce.com/products/product-bundles/)
-* Add compatibility for steps
-* Add button class for styling purposes
-* Adjust styling of quantity field on cart page
+
+- Add compatibility to [WooCommerce Composite Products](https://woocommerce.com/products/composite-products/) and [WooCommerce Product Bundles](https://woocommerce.com/products/product-bundles/)
+- Add compatibility for steps
+- Add button class for styling purposes
+- Adjust styling of quantity field on cart page
 
 = 1.9 (2019.06.13) =
-* Add filter to disable the plugin on product and/or cart page
+
+- Add filter to disable the plugin on product and/or cart page
 
 = 1.8 (2019.06.08) =
-* Fix 'maximum and minimum' issue
+
+- Fix 'maximum and minimum' issue
 
 = 1.7 (2019.05.31) =
-* Check maximum and minimum when adding or removing quantity
-* Test up to 5.2
+
+- Check maximum and minimum when adding or removing quantity
+- Test up to 5.2
 
 = 1.6 (2019.05.30) =
-* Refactor based on PHPCS and WPCS
+
+- Refactor based on PHPCS and WPCS
 
 = 1.5 (2019.02.28) =
-* Fix 'Update cart' issue
+
+- Fix 'Update cart' issue
 
 = 1.4 (2019.02.21) =
-* Test up to 5.1
+
+- Test up to 5.1
 
 = 1.3 (2019.01.12) =
-* Enable quantity buttons on cart page
+
+- Enable quantity buttons on cart page
 
 = 1.2 (2018.11.08) =
-* Add compatibility to other [WooCommerce](https://wordpress.org/plugins/woocommerce/) extensions
+
+- Add compatibility to other [WooCommerce](https://wordpress.org/plugins/woocommerce/) extensions
 
 = 1.1 (2018.03.31) =
-* Hide HTML5 input spinner
+
+- Hide HTML5 input spinner
 
 = 1.0 (2018.03.28) =
-* Initial release
+
+- Initial release

@@ -30,6 +30,7 @@
   <rule ref="WordPress.Files.FileName">
     <properties>
       <property name="is_theme" value="false"/>
+			<property name="strict_class_file_names" value="false"/>
     </properties>
   </rule>
 
