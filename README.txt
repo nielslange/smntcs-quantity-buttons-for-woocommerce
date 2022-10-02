@@ -67,6 +67,11 @@ Contributions are more than welcome. Simply head over to [Github](https://github
 
 == Change log ==
 
+= 2.0 (2022.10.02)
+
+- Test up to WC 6.9
+- Test up to WP 6.0
+
 = 1.26 (2022.01.01) =
 
 - Test up to WP 5.8
