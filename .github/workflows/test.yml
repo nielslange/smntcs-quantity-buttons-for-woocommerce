@@ -1,4 +1,4 @@
-name: Run PHPCS, PHPLint and Psalm
+name: Run PHPCS and PHPLint
 
 on: [pull_request]
 
@@ -35,18 +35,3 @@ jobs:
 
       - name: Run PHPLint
         run: composer phplint
-
-  Psalm:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Install Composer dependencies
-        uses: ramsey/composer-install@v1
-
-      - name: Show version info
-        run: ./vendor/bin/psalm --version
-
-      - name: Run Psalm
-        run: composer psalm

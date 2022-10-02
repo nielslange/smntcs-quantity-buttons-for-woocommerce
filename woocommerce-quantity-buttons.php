@@ -18,7 +18,6 @@
  * @package SMNTCS_Quantity_Increment_Buttons_for_WooCommerce
  */
 
-// Avoid direct plugin access.
 defined( 'ABSPATH' ) || exit;
 
 /**
