@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b755ce903220cfe0d30561536b007168",
+    "content-hash": "10460ce934cf57cefd10acebcfe51dfc",
     "packages": [],
     "packages-dev": [
         {
@@ -124,26 +124,26 @@
         },
         {
             "name": "overtrue/phplint",
-            "version": "2.4.1",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/overtrue/phplint.git",
-                "reference": "59affacd0b09a1460e39acf2c64c963ddbf734cf"
+                "reference": "c3021ad8cebd802ad3f4924c45f508803e0b80e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/overtrue/phplint/zipball/59affacd0b09a1460e39acf2c64c963ddbf734cf",
-                "reference": "59affacd0b09a1460e39acf2c64c963ddbf734cf",
+                "url": "https://api.github.com/repos/overtrue/phplint/zipball/c3021ad8cebd802ad3f4924c45f508803e0b80e5",
+                "reference": "c3021ad8cebd802ad3f4924c45f508803e0b80e5",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "n98/junit-xml": "1.1.0",
-                "php": ">=5.5.9",
-                "symfony/console": "^3.2|^4.0|^5.0",
-                "symfony/finder": "^3.0|^4.0|^5.0",
-                "symfony/process": "^3.3|^4.0|^5.0",
-                "symfony/yaml": "^3.0|^4.0|^5.0"
+                "php": "^5.5.9 || ^7.0",
+                "symfony/console": "^3.2 || ^4.0 || ^5.0",
+                "symfony/finder": "^3.0 || ^4.0 || ^5.0",
+                "symfony/process": "^3.3 || ^4.0 || ^5.0",
+                "symfony/yaml": "^3.0 || ^4.0 || ^5.0"
             },
             "require-dev": {
                 "brainmaestro/composer-git-hooks": "^2.7",
@@ -188,9 +188,15 @@
             ],
             "support": {
                 "issues": "https://github.com/overtrue/phplint/issues",
-                "source": "https://github.com/overtrue/phplint/tree/2.4.1"
+                "source": "https://github.com/overtrue/phplint/tree/3.2.0"
             },
-            "time": "2021-06-02T16:18:33+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/overtrue",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-07-12T07:37:04+00:00"
         },
         {
             "name": "phpcompatibility/php-compatibility",
