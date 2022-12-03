@@ -2,7 +2,7 @@
 
 ![Support Level](https://img.shields.io/badge/support-active-green.svg)
 ![Build Status](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/actions/workflows/test.yml/badge.svg)
-![GPLv3 License](https://img.shields.io/github/license/nielslange/smntcs-woocommerce-quantity-buttons.svg)
+![GPLv2 License](https://img.shields.io/github/license/nielslange/smntcs-woocommerce-quantity-buttons.svg)
 ![Compatible to WordPress version](https://plugintests.com/plugins/smntcs-woocommerce-quantity-buttons/wp-badge.svg)
 ![Compatible to PHP version](https://plugintests.com/plugins/smntcs-woocommerce-quantity-buttons/php-badge.svg)
 ![Downloads](https://img.shields.io/wordpress/plugin/dt/smntcs-woocommerce-quantity-buttons.svg)
@@ -45,6 +45,11 @@ add_filter( 'show_on_cart_page', '__return_false' );
 You can find the plugin on https://wordpress.org/plugins/smntcs-woocommerce-quantity-buttons/.
 
 ## Changelog
+
+### 2.1 (2022.12.03)
+
+- Test up to WC 7.1
+- Test up to WP 6.1
 
 ### 2.0 (2022.10.02)
 
