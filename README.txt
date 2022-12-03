@@ -1,16 +1,13 @@
 === SMNTCS Quantity Increment Buttons for WooCommerce ===
 
-Contributors: 		  nielslange, derweltbuerger, marcqueralt
-Tags: 				  WooCommerce, Quantity Buttons, Increment Buttons, Plus Minus Buttons
-Stable tag: 		  2.0
-Requires at least: 	  4.5
-Tested up to: 		  6.0
-Requires at least:	  5.0
-Requires PHP: 		  5.6
-WC requires at least: 5.0
-WC tested up to: 	  6.9
-License: 			  GPLv3+
-License URI: 		  https://www.gnu.org/licenses/gpl-3.0.en.html
+Contributors:       nielslange, derweltbuerger, marcqueralt
+Tags:               WooCommerce, Quantity Buttons, Increment Buttons, Plus Minus Buttons
+Stable tag:         2.1
+Tested up to:       6.1
+Requires PHP:       5.6
+Requires at least:  5.0
+License:            GPL v2 or later
+License URI:        https://www.gnu.org/licenses/gpl-2.0.html
 
 Display the quantity increment buttons on the WooCommerce product page and the WooCommerce cart page.
 
@@ -66,6 +63,11 @@ Contributions are more than welcome. Simply head over to [Github](https://github
 2. WooCommerce Quantity Buttons on the cart page.
 
 == Change log ==
+
+= 2.1 (2022.12.03) =
+
+- Test up to WC 7.1
+- Test up to WP 6.1
 
 = 2.0 (2022.10.02)
 
