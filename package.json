@@ -18,17 +18,16 @@
 		"url": "https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues"
 	},
 	"devDependencies": {
-		"@wordpress/browserslist-config": "^2.7.0",
-		"@wordpress/env": "^2.1.0",
-		"eslint": "^7.10.0",
-		"node-sass": "^6.0.1",
-		"nord": "^0.2.1",
-		"npm-run-all": "^4.1.5",
-		"stylelint": "^13.7.2",
-		"stylelint-config-recommended-scss": "^4.2.0",
-		"stylelint-config-wordpress": "^17.0.0",
-		"uglify-es": "^3.3.9",
-		"uglify-js": "^3.11.1"
+		"@wordpress/browserslist-config": "5.1.0",
+		"@wordpress/env": "5.3.0",
+		"@wordpress/scripts": "24.2.0",
+		"@wordpress/stylelint-config": "21.1.0",
+		"concurrently": "7.4.0",
+		"eslint": "8.24.0",
+		"node-sass": "7.0.3",
+		"nord": "0.2.1",
+		"stylelint": "14.13.0",
+		"uglify-js": "3.17.2"
 	},
 	"browserslist": [
 		"extends @wordpress/browserslist-config"
@@ -39,17 +38,14 @@
 		"build:twentynineteen": "node-sass assets/scss/themes/twentynineteen.scss assets/css/twentynineteen.css --output-style compressed --indent-type tab --indent-width 1 --source-map true",
 		"build:twentytwenty": "node-sass assets/scss/themes/twentytwenty.scss assets/css/twentytwenty.css --output-style compressed --indent-type tab --indent-width 1 --source-map true",
 		"build:js": "uglifyjs assets/js/button-handler.js -o button-handler.js --source-map",
-		"build": "run-s \"build:*\"",
+		"build": "concurrently 'npm run build:scss' 'npm run build:smntcs-retro' 'npm run build:twentynineteen' 'npm run build:twentytwenty' 'npm run build:js'",
 		"lint:scss": "stylelint **/*.scss",
 		"lint:js": "eslint assets/js",
 		"lint:js-fix": "eslint assets/js --fix",
-		"test": "npm-run-all --parallel phpcs phplint",
+		"test": "concurrently 'npm run phpcs' 'npm run phplint'",
 		"phpcbf": "composer run phpcbf",
 		"phpcs": "composer run phpcs",
 		"phplint": "composer run phplint",
 		"wp-env": "wp-env"
-	},
-	"dependencies": {
-		"nodegit": "^0.27.0"
 	}
 }

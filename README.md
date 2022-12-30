@@ -46,9 +46,19 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-woocommerce-quan
 
 ## Changelog
 
+### 2.1 (2022.12.03)
+
+- Test up to WC 7.1
+- Test up to WP 6.1
+
+### 2.0 (2022.10.02)
+
+- Test up to WC 6.9
+- Test up to WP 6.0
+
 ### 1.26 (2022.01.01)
 
-- Test up to WordPress 5.8
+- Test up to WP 5.8
 - Add support for Twenty Twenty theme
 - Add support for Twenty Twenty-One theme
 
@@ -71,11 +81,11 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-woocommerce-quan
 ### 1.21 (2020.02.07)
 
 - [Fix Vanilla JS bug](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/61)
-- Tested up to WordPress 5.6
+- Tested up to WP 5.6
 
 ### 1.20 (2020.11.30)
 
-- Tested up to WooCommerce 4.5
+- Tested up to WC 4.5
 - Replaced the jQuery code with Vanilla JS
 
 ### 1.19 (2020.09.13)
@@ -84,7 +94,8 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-woocommerce-quan
 
 ### 1.18 (2020.09.13)
 
-- Tested up to WordPress 5.5 and WooCommerce 4.4
+- Tested up to WC 4.4
+- Tested up to WP 5.5
 - Updated plugin icon
 
 ### 1.17 (2020.05.20)
@@ -111,8 +122,8 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-woocommerce-quan
 ### 1.13 (2020.03.11)
 
 - [Add filter to flip buttons](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/17)
-- Test up to WooCommerce 4.0
-- Test up to WordPress 5.4
+- Test up to WC 4.0
+- Test up to WP 5.4
 
 ### 1.12 (2019.12.06)
 
@@ -121,7 +132,7 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-woocommerce-quan
 
 ### 1.11 (2019.11.18)
 
-- Test up to WordPress 5.3
+- Test up to WP 5.3
 
 ### 1.10 (2019.06.28)
 
@@ -141,7 +152,7 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-woocommerce-quan
 ### 1.7 (2019.05.31)
 
 - Check maximum and minimum when adding or removing quantity
-- Test up to WordPress 5.2
+- Test up to WP 5.2
 
 ### 1.6 (2019.05.30)
 
@@ -153,7 +164,7 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-woocommerce-quan
 
 ### 1.4 (2019.02.21)
 
-- Test up to WordPress 5.1
+- Test up to WP 5.1
 
 ### 1.3 (2019.01.12)
 

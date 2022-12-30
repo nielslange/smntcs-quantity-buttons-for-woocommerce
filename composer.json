@@ -20,18 +20,18 @@
 		}
 	],
 	"require": {
-		"php": ">=7.0"
+		"php": ">=7.3"
 	},
 	"require-dev": {
-		"overtrue/phplint": "3.0.6",
+		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+		"overtrue/phplint": "3.2.0",
 		"phpcompatibility/phpcompatibility-wp": "^2.1",
 		"squizlabs/php_codesniffer": "^3.6",
-		"wp-coding-standards/wpcs": "^2.3",
-		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.1"
+		"wp-coding-standards/wpcs": "^2.3"
 	},
 	"scripts": {
-		"phpcbf": "phpcbf --standard=phpcs.dist.xml .",
-		"phpcs": "phpcs --standard=phpcs.dist.xml .",
+		"phpcbf": "phpcbf --standard=phpcs.xml .",
+		"phpcs": "phpcs --standard=phpcs.xml .",
 		"phplint": "phplint"
 	},
 	"config": {
