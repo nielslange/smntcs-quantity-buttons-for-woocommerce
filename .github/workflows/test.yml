@@ -3,35 +3,41 @@ name: Run PHPCS and PHPLint
 on: [pull_request]
 
 jobs:
-  PHPCS:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+    PHPCS:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v2
 
-      - name: Install Composer dependencies
-        uses: ramsey/composer-install@v1
+            - name: Install Composer dependencies
+              uses: ramsey/composer-install@v1
+              with:
+                  working-dir: ${{ github.repository }}
+                  args: update
 
-      - name: Show PHPCS sniffs
-        run: ./vendor/bin/phpcs -i
+            - name: Show PHPCS sniffs
+              run: ./vendor/bin/phpcs -i
 
-      - name: Show PHPCS version
-        run: ./vendor/bin/phpcs --version
+            - name: Show PHPCS version
+              run: ./vendor/bin/phpcs --version
 
-      - name: Run PHP_CodeSniffer
-        run: composer phpcs
+            - name: Run PHP_CodeSniffer
+              run: composer phpcs
 
-  PHPLint:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+    PHPLint:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v2
 
-      - name: Install Composer dependencies
-        uses: ramsey/composer-install@v1
+            - name: Install Composer dependencies
+              uses: ramsey/composer-install@v1
+              with:
+                  working-dir: ${{ github.repository }}
+                  args: update
 
-      - name: Show PHPLint version info
-        run: ./vendor/bin/phplint --version
+            - name: Show PHPLint version info
+              run: ./vendor/bin/phplint --version
 
-      - name: Run PHPLint
-        run: composer phplint
+            - name: Run PHPLint
+              run: composer phplint

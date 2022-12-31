@@ -46,12 +46,12 @@ if ( $max_value && $min_value === $max_value ) {
 	<div class="quantity">
 		<label class="screen-reader-text" for="smntcswcb"><?php esc_html_e( 'Quantity', 'smntcs-quantity-buttons-for-woocommerce' ); ?></label>
 		<?php if ( $flip_quantity_buttons ) : ?>
-			<input class="plus" type="button" value="+">
+			<input class="plus button wp-element-button" type="button" value="+">
 		<?php else : ?>
-			<input class="minus" type="button" value="-">
+			<input class="minus button wp-element-button" type="button" value="-">
 		<?php endif ?>
 		<input type="number"
-					id="smntcswcb" step="<?php echo esc_attr( $step ); ?>" min="<?php echo esc_attr( $min_value ); ?>" 
+					id="smntcswcb" step="<?php echo esc_attr( $step ); ?>" min="<?php echo esc_attr( $min_value ); ?>"
 					<?php if ( isset( $max_value ) && 0 < $max_value ) : ?>
 						max="<?php echo esc_attr( $max_value ); ?>"
 					<?php endif; ?>
@@ -61,9 +61,9 @@ if ( $max_value && $min_value === $max_value ) {
 					class="input-text qty text"
 					inputmode="<?php echo esc_attr( $inputmode ); ?>" />
 		<?php if ( $flip_quantity_buttons ) : ?>
-			<input class="minus" type="button" value="-">
+			<input class="minus button wp-element-button" type="button" value="-">
 		<?php else : ?>
-			<input class="plus" type="button" value="+">
+			<input class="plus button wp-element-button" type="button" value="+">
 		<?php endif ?>
 	</div>
 	<?php
