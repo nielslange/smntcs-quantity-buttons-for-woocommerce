@@ -10,6 +10,32 @@
 	-moz-appearance: textfield;
 }
 
+.woocommerce div.product .quantity + .single_add_to_cart_button {
+	min-height: auto;
+}
+
+.woocommerce a.button,
+.woocommerce button.single_add_to_cart_button,
+.woocommerce button[name="add-to-cart"],
+.woocommerce button[type="submit"]:not(.wp-block-search__button),
+.woocommerce input[name="submit"] {
+	padding: 0.6180469716em;
+}
+
+.woocommerce div.product form.cart div.quantity {
+	margin-right: 1rem;
+}
+
+.woocommerce div.product .quantity .qty {
+	margin-right: 0;
+}
+
+.woocommerce div.product form.cart .quantity .button,
+.woocommerce div.product form.cart .quantity input.button {
+	float: none;
+}
+
+.woocommerce-page .input-text,
 .woocommerce table.cart td.product-quantity .qty {
 	padding: 0.6180469716em 0.41575em;
 }
