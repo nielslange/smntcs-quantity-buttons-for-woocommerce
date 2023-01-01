@@ -17,7 +17,9 @@ jQuery( function ( $ ) {
 		};
 	}
 
-	$( document ).on( 'click', '.plus, .minus', function () {
+	$( document ).on( 'click', '.plus, .minus', function ( event ) {
+		event.preventDefault();
+
 		// Get values
 		var qty = $( this ).closest( '.quantity' ).find( '.qty' ),
 			currentVal = parseFloat( qty.val() ),

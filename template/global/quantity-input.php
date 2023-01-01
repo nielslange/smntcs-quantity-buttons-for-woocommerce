@@ -16,11 +16,11 @@
  * @version     3.3.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
-}
+// Avoid direct plugin access.
+defined( 'ABSPATH' ) || exit;
 
 $flip_quantity_buttons = apply_filters( 'flip_quantity_buttons', false );
+$use_html_buttons      = apply_filters( 'use_html_buttons', false );
 
 if ( $max_value && $min_value === $max_value ) {
 	?>
@@ -45,26 +45,47 @@ if ( $max_value && $min_value === $max_value ) {
 	?>
 	<div class="quantity">
 		<label class="screen-reader-text" for="smntcswcb"><?php esc_html_e( 'Quantity', 'smntcs-quantity-buttons-for-woocommerce' ); ?></label>
+
 		<?php if ( $flip_quantity_buttons ) : ?>
-			<input class="plus button wp-element-button" type="button" value="+">
+			<?php if ( $use_html_buttons ) : ?>
+				<button class="plus button wp-element-button">+</button>
+			<?php else : ?>
+				<input class="plus button wp-element-button" type="button" value="+">
+			<?php endif ?>
 		<?php else : ?>
-			<input class="minus button wp-element-button" type="button" value="-">
+			<?php if ( $use_html_buttons ) : ?>
+				<button class="minus button wp-element-button">-</button>
+			<?php else : ?>
+				<input class="minus button wp-element-button" type="button" value="-">
+			<?php endif ?>
 		<?php endif ?>
+
 		<input type="number"
-					id="smntcswcb" step="<?php echo esc_attr( $step ); ?>" min="<?php echo esc_attr( $min_value ); ?>"
-					<?php if ( isset( $max_value ) && 0 < $max_value ) : ?>
-						max="<?php echo esc_attr( $max_value ); ?>"
-					<?php endif; ?>
-					name="<?php echo esc_attr( $input_name ); ?>"
-					value="<?php echo esc_attr( $input_value ); ?>"
-					title="<?php echo esc_attr_x( 'Qty', 'Product quantity input tooltip', 'smntcs-quantity-buttons-for-woocommerce' ); ?>"
-					class="input-text qty text"
-					inputmode="<?php echo esc_attr( $inputmode ); ?>" />
+			id="smntcswcb" step="<?php echo esc_attr( $step ); ?>"
+			min="<?php echo esc_attr( $min_value ); ?>"
+			<?php if ( isset( $max_value ) && 0 < $max_value ) : ?>
+				max="<?php echo esc_attr( $max_value ); ?>"
+			<?php endif; ?>
+			name="<?php echo esc_attr( $input_name ); ?>"
+			value="<?php echo esc_attr( $input_value ); ?>"
+			title="<?php echo esc_attr_x( 'Qty', 'Product quantity input tooltip', 'smntcs-quantity-buttons-for-woocommerce' ); ?>"
+			class="input-text qty text"
+			inputmode="<?php echo esc_attr( $inputmode ); ?>" />
+
 		<?php if ( $flip_quantity_buttons ) : ?>
-			<input class="minus button wp-element-button" type="button" value="-">
+			<?php if ( $use_html_buttons ) : ?>
+				<button class="minus button wp-element-button">-</button>
+			<?php else : ?>
+				<input class="minus button wp-element-button" type="button" value="-">
+			<?php endif ?>
 		<?php else : ?>
-			<input class="plus button wp-element-button" type="button" value="+">
+			<?php if ( $use_html_buttons ) : ?>
+				<button class="plus button wp-element-button">+</button>
+			<?php else : ?>
+				<input class="plus button wp-element-button" type="button" value="+">
+			<?php endif ?>
 		<?php endif ?>
+
 	</div>
 	<?php
 }
