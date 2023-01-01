@@ -1,8 +1,8 @@
 === SMNTCS Quantity Increment Buttons for WooCommerce ===
 
 Contributors:       nielslange, derweltbuerger, marcqueralt
-Tags:               WooCommerce, Quantity Buttons, Increment Buttons, Plus Minus Buttons
-Stable tag:         2.1
+Tags:               quantity buttons, quantity, quantity increment, woocommerce quantity
+Stable tag:         2.2
 Tested up to:       6.1
 Requires PHP:       5.6
 Requires at least:  5.0
@@ -48,6 +48,14 @@ add_filter( 'show_on_product_page', '__return_false' );
 add_filter( 'show_on_cart_page', '__return_false' );
 `
 
+Since 2.2, it's possible to use `<button>` instead of `<input type="button">` for the quantity buttons. To do that, please add the corresponding filter to your functions.php file:
+
+### Use `<button>` instead of `<input type="button">`
+
+`
+add_filter( 'use_html_buttons', '__return_true' );
+`
+
 == Contribute ==
 
 Contributions are more than welcome. Simply head over to [Github](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/pulls) and open a pull request.
@@ -64,12 +72,17 @@ Contributions are more than welcome. Simply head over to [Github](https://github
 
 == Change log ==
 
+= 2.2 (2023.01.01) =
+
+- [Fix step increment when changing shipping methods](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/88)
+- [Add toggle to use `<button>` instead of `<input type="button">`](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/90)
+
 = 2.1 (2022.12.03) =
 
 - Test up to WC 7.1
 - Test up to WP 6.1
 
-= 2.0 (2022.10.02)
+= 2.0 (2022.10.02) =
 
 - Test up to WC 6.9
 - Test up to WP 6.0

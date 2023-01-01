@@ -13,38 +13,51 @@ Display the quantity increment buttons on the WooCommerce product page and the W
 
 ## Filter
 
-Since 1.13 it's possible to flip the -/+ buttons to +/-. To do that, please add the corresponding filter to your functions.php file:
+Since 1.13, it's possible to flip the -/+ buttons to +/-. To do that, please add the corresponding filter to your functions.php file:
 
-### Flip quantity buttons:
+### Flip quantity buttons
 
-```
+```php
 add_filter( 'flip_quantity_buttons', '__return_true' );
 ```
 
-Since 1.9 it's possible to disable the plugin on the product page and/or the cart page. To do that, please add the corresponding filter to your functions.php file:
+Since 1.9, it's possible to disable the plugin on the product page and/or the cart page. To do that, please add the corresponding filter to your functions.php file:
 
-### Disable plugin on product page:
+### Disable plugin on product page
 
-```
+```php
 add_filter( 'show_on_product_page', '__return_false' );
 ```
 
-### Disable plugin on cart page:
+### Disable plugin on cart page
 
-```
+```php
 add_filter( 'show_on_cart_page', '__return_false' );
+```
+
+Since 2.2, it's possible to use `<button>` instead of `<input type="button">` for the quantity buttons. To do that, please add the corresponding filter to your functions.php file:
+
+### Use `<button>` instead of `<input type="button">`
+
+```php
+add_filter( 'use_html_buttons', '__return_true' );
 ```
 
 ## Installation
 
-1. Upload `smntcs-quantity-buttons-for-woocommerce` to the `/wp-content/plugins/` directory
-2. Activate the plugin through the `Plugins` menu in WordPress
+1. Upload `smntcs-quantity-buttons-for-woocommerce` to the `/wp-content/plugins/` directory.
+2. Activate the plugin through the `Plugins` menu in WordPress.
 
 ## Plugin page
 
-You can find the plugin on https://wordpress.org/plugins/smntcs-woocommerce-quantity-buttons/.
+You can find the plugin on <https://wordpress.org/plugins/smntcs-woocommerce-quantity-buttons/>.
 
 ## Changelog
+
+### 2.2 (2023.01.01)
+
+- [Fix step increment when changing shipping methods](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/88)
+- [Add toggle to use `<button>` instead of `<input type="button">`](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/90)
 
 ### 2.1 (2022.12.03)
 
