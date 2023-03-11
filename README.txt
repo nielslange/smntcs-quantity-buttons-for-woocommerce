@@ -2,8 +2,8 @@
 
 Contributors:       nielslange, derweltbuerger, marcqueralt
 Tags:               quantity buttons, quantity, quantity increment, woocommerce quantity
-Stable tag:         2.2
-Tested up to:       6.1
+Stable tag:         2.3
+Tested up to:       6.2
 Requires PHP:       5.6
 Requires at least:  5.0
 License:            GPL v2 or later
@@ -50,7 +50,7 @@ add_filter( 'show_on_cart_page', '__return_false' );
 
 Since 2.2, it's possible to use `<button>` instead of `<input type="button">` for the quantity buttons. To do that, please add the corresponding filter to your functions.php file:
 
-### Use `<button>` instead of `<input type="button">`
+*** Use `<button>` instead of `<input type="button">` ***
 
 `
 add_filter( 'use_html_buttons', '__return_true' );
@@ -71,6 +71,10 @@ Contributions are more than welcome. Simply head over to [Github](https://github
 2. WooCommerce Quantity Buttons on the cart page.
 
 == Change log ==
+
+= 2.3 (2023.03.11) =
+
+- Test up to WP 6.2
 
 = 2.2 (2023.01.01) =
 

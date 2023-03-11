@@ -10,6 +10,25 @@
 	-moz-appearance: textfield;
 }
 
-.woocommerce table.cart td.product-quantity .qty {
-	padding: 0.6180469716em 0.41575em;
+.woocommerce table.cart td.product-quantity .qty,
+.woocommerce.single .qty {
+	padding: 0.6180469716em 0.41575em !important;
+	margin-bottom: 0 !important;
+}
+
+.woocommerce div.product form.cart .button {
+	float: none !important;
+	margin-bottom: 0 !important;
+}
+
+.woocommerce .quantity .plus,
+.woocommerce-page .quantity .plus,
+.woocommerce #content .quantity .plus,
+.woocommerce-page #content .quantity .plus,
+.woocommerce .quantity .minus,
+.woocommerce-page .quantity .minus,
+.woocommerce #content .quantity .minus,
+.woocommerce-page #content .quantity .minus {
+	height: 56px !important;
+	width: 60px !important;
 }
