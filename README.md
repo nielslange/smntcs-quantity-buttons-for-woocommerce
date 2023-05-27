@@ -55,6 +55,14 @@ You can find the plugin on <https://wordpress.org/plugins/smntcs-woocommerce-qua
 
 ## Changelog
 
+### 2.4 (2023.05.27)
+
+-   Add High-Performance Order Storage (HPOS) support
+
+### 2.3 (2023.03.11)
+
+-   Test up to WP 6.2
+
 ### 2.2 (2023.01.01)
 
 -   [Fix step increment when changing shipping methods](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/88)

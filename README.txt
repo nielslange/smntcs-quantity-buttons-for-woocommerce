@@ -2,7 +2,7 @@
 
 Contributors:       nielslange, derweltbuerger, marcqueralt
 Tags:               quantity buttons, quantity, quantity increment, woocommerce quantity
-Stable tag:         2.3
+Stable tag:         2.4
 Tested up to:       6.2
 Requires PHP:       5.6
 Requires at least:  5.0
@@ -71,6 +71,10 @@ Contributions are more than welcome. Simply head over to [Github](https://github
 2. WooCommerce Quantity Buttons on the cart page.
 
 == Change log ==
+
+= 2.4 (2023.05.27) =
+
+- Add High-Performance Order Storage (HPOS) support
 
 = 2.3 (2023.03.11) =
 

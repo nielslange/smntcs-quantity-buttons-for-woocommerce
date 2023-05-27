@@ -6,7 +6,7 @@
  * Author:                Niels Lange
  * Author URI:            https://nielslange.de
  * Text Domain:           smntcs-quantity-buttons-for-woocommerce
- * Version:               2.3
+ * Version:               2.4
  * Requires PHP:          5.6
  * Requires at least:     5.0
  * WC requires at least:  5.0
@@ -34,6 +34,19 @@ class SMNTCS_Quantity_Increment_Buttons_For_WC {
 		add_action( 'wp_enqueue_scripts', array( __class__, 'enqueue_scripts_and_styles' ) );
 		add_action( 'wp_enqueue_scripts', array( __class__, 'add_theme_support' ), 11 );
 		add_filter( 'woocommerce_locate_template', array( __class__, 'load_template' ), 1, 3 );
+		add_action( 'before_woocommerce_init', array( __class__, 'declare_compatibility' ) );
+	}
+
+	/**
+	 * Declare compatibility with custom order tables for WooCommerce.
+	 *
+	 * @return void
+	 * @since 2.4
+	 */
+	public static function declare_compatibility() {
+		if ( class_exists( '\Automattic\WooCommerce\Utilities\FeaturesUtil' ) ) {
+			\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', __FILE__, true );
+		}
 	}
 
 	/**
