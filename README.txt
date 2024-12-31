@@ -2,8 +2,8 @@
 
 Contributors:       nielslange, derweltbuerger, marcqueralt
 Tags:               quantity buttons, quantity, quantity increment, woocommerce quantity
-Stable tag:         2.5
-Tested up to:       6.4
+Stable tag:         2.6
+Tested up to:       6.7
 Requires PHP:       5.6
 Requires at least:  5.0
 License:            GPL v2 or later
@@ -72,9 +72,13 @@ Contributions are more than welcome. Simply head over to [Github](https://github
 
 == Change log ==
 
+= 2.6 (2024.12.31) =
+
+- Test up to WordPress 6.7
+
 = 2.5 (2023.10.01) =
 
-- Test up to WP 6.4
+- Test up to WordPress 6.4
 
 = 2.4 (2023.05.27) =
 
@@ -82,7 +86,7 @@ Contributions are more than welcome. Simply head over to [Github](https://github
 
 = 2.3 (2023.03.11) =
 
-- Test up to WP 6.2
+- Test up to WordPress 6.2
 
 = 2.2 (2023.01.01) =
 
@@ -92,16 +96,16 @@ Contributions are more than welcome. Simply head over to [Github](https://github
 = 2.1 (2022.12.03) =
 
 - Test up to WC 7.1
-- Test up to WP 6.1
+- Test up to WordPress 6.1
 
 = 2.0 (2022.10.02) =
 
 - Test up to WC 6.9
-- Test up to WP 6.0
+- Test up to WordPress 6.0
 
 = 1.26 (2022.01.01) =
 
-- Test up to WP 5.8
+- Test up to WordPress 5.8
 - Add support for Twenty Twenty theme
 - Add support for Twenty Twenty-One theme
 
@@ -124,7 +128,7 @@ Contributions are more than welcome. Simply head over to [Github](https://github
 = 1.21 (2020.02.07) =
 
 - [Fix Vanilla JS bug](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/61)
-- Test up to WP 5.6
+- Test up to WordPress 5.6
 
 = 1.20 (2020.11.30) =
 
@@ -138,7 +142,7 @@ Contributions are more than welcome. Simply head over to [Github](https://github
 = 1.18 (2020.09.13) =
 
 - Test up to WC 4.4
-- Test up to WP 5.5
+- Test up to WordPress 5.5
 - Updated plugin icon
 
 = 1.17 (2020.05.20) =
@@ -166,7 +170,7 @@ Contributions are more than welcome. Simply head over to [Github](https://github
 
 - [Add filter to flip buttons](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues/17)
 - Test up to WC 4.0
-- Test up to WP 5.4
+- Test up to WordPress 5.4
 
 = 1.12 (2019.12.06) =
 
