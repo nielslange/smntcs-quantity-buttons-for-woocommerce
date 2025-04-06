@@ -2,10 +2,6 @@
 	"name": "nielslange/smntcs-quantity-buttons-for-woocommerce",
 	"description": "Display quantity buttons on WooCommerce product page",
 	"homepage": "https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce",
-	"support": {
-		"issues": "https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/issues",
-		"source": "https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce"
-	},
 	"type": "wordpress-plugin",
 	"keywords": [
 		"WordPress",
@@ -19,9 +15,6 @@
 			"email": "info@nielslange.de"
 		}
 	],
-	"require": {
-		"php": ">=8.0"
-	},
 	"require-dev": {
 		"dealerdirect/phpcodesniffer-composer-installer": "^1.0.0",
 		"overtrue/phplint": "9.0.4",
