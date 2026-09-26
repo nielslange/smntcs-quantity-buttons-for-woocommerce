@@ -6,11 +6,12 @@
  * Author:                Niels Lange
  * Author URI:            https://nielslange.de
  * Text Domain:           smntcs-quantity-buttons-for-woocommerce
- * Version:               2.6
- * Requires PHP:          5.6
+ * Version:               2.7
+ * Requires PHP:          7.4
  * Requires at least:     5.0
+ * Requires Plugins:      woocommerce
  * WC requires at least:  5.0
- * WC tested up to:       7.1
+ * WC tested up to:       11.1
  * License:               GPL v2 or later
  * License URI:           https://www.gnu.org/licenses/gpl-2.0.html
  *
@@ -30,11 +31,11 @@ class SMNTCS_Quantity_Increment_Buttons_For_WC {
 	 * @since 2.0
 	 */
 	public static function init() {
-		add_action( 'admin_notices', array( __class__, 'handle_notice' ) );
-		add_action( 'wp_enqueue_scripts', array( __class__, 'enqueue_scripts_and_styles' ) );
-		add_action( 'wp_enqueue_scripts', array( __class__, 'add_theme_support' ), 11 );
-		add_filter( 'woocommerce_locate_template', array( __class__, 'load_template' ), 1, 3 );
-		add_action( 'before_woocommerce_init', array( __class__, 'declare_compatibility' ) );
+		add_action( 'admin_notices', array( __CLASS__, 'handle_notice' ) );
+		add_action( 'wp_enqueue_scripts', array( __CLASS__, 'enqueue_scripts_and_styles' ) );
+		add_action( 'wp_enqueue_scripts', array( __CLASS__, 'add_theme_support' ), 11 );
+		add_filter( 'woocommerce_locate_template', array( __CLASS__, 'load_template' ), 1, 3 );
+		add_action( 'before_woocommerce_init', array( __CLASS__, 'declare_compatibility' ) );
 	}
 
 	/**
@@ -46,6 +47,7 @@ class SMNTCS_Quantity_Increment_Buttons_For_WC {
 	public static function declare_compatibility() {
 		if ( class_exists( '\Automattic\WooCommerce\Utilities\FeaturesUtil' ) ) {
 			\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', __FILE__, true );
+			\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'cart_checkout_blocks', __FILE__, true );
 		}
 	}
 

@@ -1,15 +1,15 @@
 === SMNTCS Quantity Increment Buttons for WooCommerce ===
 
 Contributors:       nielslange, derweltbuerger, marcqueralt
-Tags:               quantity buttons, quantity, quantity increment, woocommerce quantity
-Stable tag:         2.6
-Tested up to:       6.7
-Requires PHP:       5.6
+Tags:               woocommerce, quantity, quantity buttons, plus minus, cart
 Requires at least:  5.0
+Tested up to:       7.1
+Requires PHP:       7.4
+Stable tag:         2.7
 License:            GPL v2 or later
 License URI:        https://www.gnu.org/licenses/gpl-2.0.html
 
-Display the quantity increment buttons on the WooCommerce product page and the WooCommerce cart page.
+Adds plus and minus buttons to the WooCommerce quantity field on product and cart pages.
 
 == Description ==
 
@@ -56,9 +56,43 @@ Since 2.2, it's possible to use `<button>` instead of `<input type="button">` fo
 add_filter( 'use_html_buttons', '__return_true' );
 `
 
+== Frequently Asked Questions ==
+
+= Where are the settings? =
+
+The plugin has no settings page. Activate it and the buttons appear on the product page and in the classic cart. Use the filters described above to change its behaviour.
+
+= Does it work with the Cart block? =
+
+The Cart and Checkout blocks already have their own plus and minus buttons, so the plugin leaves them alone. It adds its buttons to the product page and to the classic cart.
+
+= The quantity changes by 2 instead of 1. What can I do? =
+
+Some themes add their own quantity buttons. Since version 2.7 the plugin stops those scripts from changing the quantity a second time. Update to the latest version.
+
+= Does it respect minimum, maximum and step values? =
+
+Yes. The buttons move in steps and stay between the minimum and maximum. Values that customers type in are rounded to the nearest allowed value, which makes the plugin work with plugins such as Min/Max Quantities.
+
+= Where are the settings? =
+
+The plugin has no settings page. Activate it and the buttons appear on the product page and in the classic cart. Use the filters described above to change its behaviour.
+
+= Does it work with the Cart block? =
+
+The Cart and Checkout blocks already have their own plus and minus buttons, so the plugin leaves them alone. It adds its buttons to the product page and to the classic cart.
+
+= The quantity changes by 2 instead of 1. What can I do? =
+
+Some themes add their own quantity buttons. Since version 2.7 the plugin stops those scripts from changing the quantity a second time. Update to the latest version.
+
+= Does it respect minimum, maximum and step values? =
+
+Yes. The buttons move in steps and stay between the minimum and maximum. Values that customers type in are rounded to the nearest allowed value, which makes the plugin work with plugins such as Min/Max Quantities.
+
 == Contribute ==
 
-Contributions are more than welcome. Simply head over to [Github](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/pulls) and open a pull request.
+Contributions are more than welcome. Simply head over to [GitHub](https://github.com/nielslange/smntcs-quantity-buttons-for-woocommerce/pulls) and open a pull request.
 
 == Installation ==
 
@@ -70,7 +104,20 @@ Contributions are more than welcome. Simply head over to [Github](https://github
 1. WooCommerce Quantity Buttons on the product page.
 2. WooCommerce Quantity Buttons on the cart page.
 
-== Change log ==
+== Changelog ==
+
+= 2.7 (2026.09.26) =
+
+- Test up to WordPress 7.1
+- Update development dependencies and GitHub Actions
+- Test up to WooCommerce 11.1
+- Fix the quantity changing by 2 when the theme has its own quantity buttons
+- Round typed quantities to the nearest step, minimum and maximum
+- Keep the minus button, the quantity field and the plus button on one line
+- Give every quantity field its own ID and label, and add accessible button labels
+- Stop the HTML button variant from submitting the form
+- Declare compatibility with the Cart and Checkout blocks
+- Replace the deprecated node-sass with sass
 
 = 2.6 (2024.12.31) =
 

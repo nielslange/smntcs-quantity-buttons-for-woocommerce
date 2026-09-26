@@ -55,6 +55,19 @@ You can find the plugin on <https://wordpress.org/plugins/smntcs-woocommerce-qua
 
 ## Changelog
 
+### 2.7 (2026.09.26)
+
+- Test up to WordPress 7.1
+- Update development dependencies and GitHub Actions
+- Test up to WooCommerce 11.1
+- Fix the quantity changing by 2 when the theme has its own quantity buttons
+- Round typed quantities to the nearest step, minimum and maximum
+- Keep the minus button, the quantity field and the plus button on one line
+- Give every quantity field its own ID and label, and add accessible button labels
+- Stop the HTML button variant from submitting the form
+- Declare compatibility with the Cart and Checkout blocks
+- Replace the deprecated node-sass with sass
+
 ### 2.6 (2024.12.31)
 
 -   Test up to WordPress 6.7
