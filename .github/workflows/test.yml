@@ -7,10 +7,15 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout code
-              uses: actions/checkout@v4
+              uses: actions/checkout@v7
+
+            - name: Set up PHP
+              uses: shivammathur/setup-php@v2
+              with:
+                php-version: '8.3'
 
             - name: Install Composer dependencies
-              uses: ramsey/composer-install@v3
+              uses: ramsey/composer-install@v4
               with:
                   working-dir: ${{ github.repository }}
                   args: update
@@ -28,10 +33,15 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout code
-              uses: actions/checkout@v4
+              uses: actions/checkout@v7
+
+            - name: Set up PHP
+              uses: shivammathur/setup-php@v2
+              with:
+                php-version: '8.3'
 
             - name: Install Composer dependencies
-              uses: ramsey/composer-install@v3
+              uses: ramsey/composer-install@v4
               with:
                   working-dir: ${{ github.repository }}
                   args: update

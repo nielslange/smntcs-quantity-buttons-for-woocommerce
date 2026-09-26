@@ -40,25 +40,25 @@ if ( $max_value && $min_value === $max_value ) {
 	}
 
 	?>
-	<div class="quantity">
-		<label class="screen-reader-text" for="smntcswcb"><?php esc_html_e( 'Quantity', 'smntcs-quantity-buttons-for-woocommerce' ); ?></label>
+	<div class="quantity smntcs-quantity">
+		<label class="screen-reader-text" for="<?php echo esc_attr( $input_id ); ?>"><?php esc_html_e( 'Quantity', 'smntcs-quantity-buttons-for-woocommerce' ); ?></label>
 
 		<?php if ( $flip_quantity_buttons ) : ?>
 			<?php if ( $use_html_buttons ) : ?>
-				<button class="plus button wp-element-button">+</button>
+				<button type="button" class="plus button wp-element-button" aria-label="<?php esc_attr_e( 'Increase quantity', 'smntcs-quantity-buttons-for-woocommerce' ); ?>">+</button>
 			<?php else : ?>
-				<input class="plus button wp-element-button" type="button" value="+">
+				<input class="plus button wp-element-button" type="button" value="+" aria-label="<?php esc_attr_e( 'Increase quantity', 'smntcs-quantity-buttons-for-woocommerce' ); ?>">
 			<?php endif ?>
 		<?php else : ?>
 			<?php if ( $use_html_buttons ) : ?>
-				<button class="minus button wp-element-button">-</button>
+				<button type="button" class="minus button wp-element-button" aria-label="<?php esc_attr_e( 'Decrease quantity', 'smntcs-quantity-buttons-for-woocommerce' ); ?>">-</button>
 			<?php else : ?>
-				<input class="minus button wp-element-button" type="button" value="-">
+				<input class="minus button wp-element-button" type="button" value="-" aria-label="<?php esc_attr_e( 'Decrease quantity', 'smntcs-quantity-buttons-for-woocommerce' ); ?>">
 			<?php endif ?>
 		<?php endif ?>
 
 		<input type="number"
-			id="smntcswcb" step="<?php echo esc_attr( $step ); ?>"
+			id="<?php echo esc_attr( $input_id ); ?>" step="<?php echo esc_attr( $step ); ?>"
 			min="<?php echo esc_attr( $min_value ); ?>"
 			<?php if ( isset( $max_value ) && 0 < $max_value ) : ?>
 				max="<?php echo esc_attr( $max_value ); ?>"
@@ -71,15 +71,15 @@ if ( $max_value && $min_value === $max_value ) {
 
 		<?php if ( $flip_quantity_buttons ) : ?>
 			<?php if ( $use_html_buttons ) : ?>
-				<button class="minus button wp-element-button">-</button>
+				<button type="button" class="minus button wp-element-button" aria-label="<?php esc_attr_e( 'Decrease quantity', 'smntcs-quantity-buttons-for-woocommerce' ); ?>">-</button>
 			<?php else : ?>
-				<input class="minus button wp-element-button" type="button" value="-">
+				<input class="minus button wp-element-button" type="button" value="-" aria-label="<?php esc_attr_e( 'Decrease quantity', 'smntcs-quantity-buttons-for-woocommerce' ); ?>">
 			<?php endif ?>
 		<?php else : ?>
 			<?php if ( $use_html_buttons ) : ?>
-				<button class="plus button wp-element-button">+</button>
+				<button type="button" class="plus button wp-element-button" aria-label="<?php esc_attr_e( 'Increase quantity', 'smntcs-quantity-buttons-for-woocommerce' ); ?>">+</button>
 			<?php else : ?>
-				<input class="plus button wp-element-button" type="button" value="+">
+				<input class="plus button wp-element-button" type="button" value="+" aria-label="<?php esc_attr_e( 'Increase quantity', 'smntcs-quantity-buttons-for-woocommerce' ); ?>">
 			<?php endif ?>
 		<?php endif ?>
 

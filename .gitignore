@@ -1,3 +1,8 @@
 vendor/
 node_modules/
 /.phplint.cache
+cypress/screenshots
+cypress/videos
+playwright-report
+test-results
+.DS_Store
