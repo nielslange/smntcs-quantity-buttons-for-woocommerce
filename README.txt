@@ -5,7 +5,7 @@ Tags:               woocommerce, quantity, quantity buttons, plus minus, cart
 Requires at least:  5.0
 Tested up to:       7.1
 Requires PHP:       7.4
-Stable tag:         2.7
+Stable tag:         2.8
 License:            GPL v2 or later
 License URI:        https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,7 +13,7 @@ Adds plus and minus buttons to the WooCommerce quantity field on product and car
 
 == Description ==
 
-Increment Quantity Buttons for WooCommerce adds two additional buttons to the quantity input field on the WooCommerce product page to easily increase and decrease the quantity via button click.
+SMNTCS Quantity Increment Buttons for WooCommerce adds minus and plus buttons around the quantity field on the product page and in the classic cart, so customers can change the quantity with one click. The buttons respect the minimum, maximum and step of each product, which makes the plugin work with quantity plugins such as Min/Max Quantities.
 
 === Compatible with ===
 
@@ -24,55 +24,25 @@ Increment Quantity Buttons for WooCommerce adds two additional buttons to the qu
 * [WooCommerce Minimum and Maximum Quantity](https://wordpress.org/plugins/woo-min-max-quantity-limit/)
 * [WooCommerce Product Bundles](https://woocommerce.com/products/product-bundles/)
 
-== Filter ==
+== Filters ==
 
-Since 1.13 it's possible to flip the -/+ buttons to +/-. To do that, please add the corresponding filter to your functions.php file:
+Add these lines to your theme's functions.php file or a small plugin.
 
-**Flip quantity buttons:**
+Swap the order of the buttons to plus, quantity, minus:
 
-`
-add_filter( 'flip_quantity_buttons', '__return_true' );
-`
+`add_filter( 'flip_quantity_buttons', '__return_true' );`
 
-Since 1.9 it's possible to disable the plugin on the product page and/or the cart page. To do that, please add the corresponding filter to your functions.php file:
+Turn the buttons off on the product page or on the cart page:
 
-**Disable plugin on product page:**
+`add_filter( 'show_on_product_page', '__return_false' );`
 
-`
-add_filter( 'show_on_product_page', '__return_false' );
-`
+`add_filter( 'show_on_cart_page', '__return_false' );`
 
-**Disable plugin on cart page:**
+Use `<button>` elements instead of `<input type="button">`:
 
-`
-add_filter( 'show_on_cart_page', '__return_false' );
-`
-
-Since 2.2, it's possible to use `<button>` instead of `<input type="button">` for the quantity buttons. To do that, please add the corresponding filter to your functions.php file:
-
-*** Use `<button>` instead of `<input type="button">` ***
-
-`
-add_filter( 'use_html_buttons', '__return_true' );
-`
+`add_filter( 'use_html_buttons', '__return_true' );`
 
 == Frequently Asked Questions ==
-
-= Where are the settings? =
-
-The plugin has no settings page. Activate it and the buttons appear on the product page and in the classic cart. Use the filters described above to change its behaviour.
-
-= Does it work with the Cart block? =
-
-The Cart and Checkout blocks already have their own plus and minus buttons, so the plugin leaves them alone. It adds its buttons to the product page and to the classic cart.
-
-= The quantity changes by 2 instead of 1. What can I do? =
-
-Some themes add their own quantity buttons. Since version 2.7 the plugin stops those scripts from changing the quantity a second time. Update to the latest version.
-
-= Does it respect minimum, maximum and step values? =
-
-Yes. The buttons move in steps and stay between the minimum and maximum. Values that customers type in are rounded to the nearest allowed value, which makes the plugin work with plugins such as Min/Max Quantities.
 
 = Where are the settings? =
 
@@ -105,6 +75,11 @@ Contributions are more than welcome. Simply head over to [GitHub](https://github
 2. WooCommerce Quantity Buttons on the cart page.
 
 == Changelog ==
+
+= 2.8 (2026.09.27) =
+
+- Remove duplicated FAQ entries from the readme
+- Rewrite the plugin description and the filter documentation
 
 = 2.7 (2026.09.26) =
 

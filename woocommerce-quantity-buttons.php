@@ -6,7 +6,7 @@
  * Author:                Niels Lange
  * Author URI:            https://nielslange.de
  * Text Domain:           smntcs-quantity-buttons-for-woocommerce
- * Version:               2.7
+ * Version:               2.8
  * Requires PHP:          7.4
  * Requires at least:     5.0
  * Requires Plugins:      woocommerce

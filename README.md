@@ -55,6 +55,11 @@ You can find the plugin on <https://wordpress.org/plugins/smntcs-woocommerce-qua
 
 ## Changelog
 
+### 2.8 (2026.09.27)
+
+- Remove duplicated FAQ entries from the readme
+- Rewrite the plugin description and the filter documentation
+
 ### 2.7 (2026.09.26)
 
 - Test up to WordPress 7.1
