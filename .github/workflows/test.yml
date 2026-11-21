@@ -1,6 +1,14 @@
 name: Run PHPCS and PHPLint
 
-on: [pull_request, push]
+on:
+  pull_request:
+  push:
+    branches:
+      - trunk
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
     PHPCS:
