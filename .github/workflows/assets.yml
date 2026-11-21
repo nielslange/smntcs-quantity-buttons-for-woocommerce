@@ -1,0 +1,22 @@
+name: Update WordPress.org assets
+on:
+  push:
+    branches:
+      - trunk
+    paths:
+      - 'assets/images/**'
+jobs:
+  assets:
+    name: Update WordPress.org assets
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: WordPress.org plugin asset update
+        uses: 10up/action-wordpress-plugin-asset-update@stable
+        env:
+          SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
+          SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
+          SLUG: smntcs-woocommerce-quantity-buttons
+          ASSETS_DIR: assets/images
+          README_NAME: README.txt
+          IGNORE_OTHER_FILES: true
